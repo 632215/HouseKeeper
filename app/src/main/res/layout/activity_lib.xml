@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_main_default_bg_color"
+    android:orientation="vertical">
+
+    <www.jinke.com.library.widget.NavigationView
+        android:id="@+id/activity_lib_navigationview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:id="@+id/activity_lib_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_main_default_bg_color"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

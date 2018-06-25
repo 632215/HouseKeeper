@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_newslist_layout"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_266"
+        android:paddingBottom="@dimen/base_dimen_54"
+        android:paddingLeft="@dimen/base_dimen_28"
+        android:paddingRight="@dimen/base_dimen_26"
+        android:paddingTop="@dimen/base_dimen_84"
+        android:background="@drawable/shape_fragment_msg_top_parting_line_16dp">
+
+        <TextView
+            android:id="@+id/txwNewsState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/shape_txw_btn_blue"
+            android:paddingBottom="@dimen/base_dimen_42"
+            android:paddingLeft="@dimen/base_dimen_32"
+            android:paddingRight="@dimen/base_dimen_32"
+            android:paddingTop="@dimen/base_dimen_42"
+            android:text="@string/news_unRead"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_32" />
+
+        <TextView
+            android:id="@+id/txwNewsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:ellipsize="end"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/txwNewsState"
+            android:paddingLeft="@dimen/base_dimen_26" />
+
+        <TextView
+            android:id="@+id/txwNewsFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/base_dimen_26"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/txwNewsState"
+            android:textColor="@color/newslist_text_gray"
+            />
+
+        <TextView
+            android:id="@+id/txwNewsTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/base_dimen_26"
+            android:gravity="right"
+            android:layout_toRightOf="@+id/txwNewsFrom"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/newslist_text_gray"/>
+    </RelativeLayout>
+</LinearLayout>

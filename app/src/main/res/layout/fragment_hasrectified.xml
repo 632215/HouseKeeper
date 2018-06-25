@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_backgroup"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_80"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/allHasRectified"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@drawable/select_group_text" />
+
+
+        <RadioButton
+            android:id="@+id/todayHasRectified"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="今日"
+            android:textColor="@drawable/select_group_text" />
+
+
+        <RadioButton
+            android:id="@+id/yesterdayHasRectified"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_dimen_20"
+            android:paddingTop="@dimen/base_dimen_20"
+            android:text="昨日"
+            android:textColor="@drawable/select_group_text" />
+
+
+        <RadioButton
+            android:id="@+id/filterHasRectified"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:drawableRight="@drawable/angledown"
+            android:gravity="center"
+            android:paddingLeft="@dimen/base_dimen_40"
+            android:paddingRight="@dimen/base_dimen_40"
+            android:text="筛选"
+            android:textColor="@drawable/select_group_text" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:background="@color/line" />
+
+    <FrameLayout
+        android:id="@+id/hasrectified"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

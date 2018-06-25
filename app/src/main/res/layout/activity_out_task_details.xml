@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jinke.housekeeper.saas.patrol.ui.activity.OutTaskDetailsActivity">
+
+    <LinearLayout
+        android:id="@+id/out_task_details_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_128"
+        android:layout_marginTop="@dimen/base_dimen_24"
+        android:background="@color/equipment_title_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/base_dimen_24"
+        android:paddingRight="@dimen/base_dimen_24"
+        android:paddingTop="@dimen/base_dimen_40">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="109"
+            android:background="@color/equipment_bg_3"
+            android:gravity="center"
+            android:lines="1"
+            android:text="巡更任务名称"
+            android:textColor="@color/equipment_text_5"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="112"
+            android:background="@color/equipment_bg_3"
+            android:gravity="center"
+            android:lines="1"
+            android:text="漏检点位名称"
+            android:textColor="@color/equipment_text_5"
+            android:textSize="@dimen/base_dimen_30" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/out_task_details_head_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_2"
+        android:layout_below="@+id/out_task_details_head_layout"
+        android:layout_marginLeft="@dimen/base_dimen_24"
+        android:layout_marginRight="@dimen/base_dimen_24"
+        android:background="@color/equipment_text_18"
+        android:orientation="horizontal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/out_task_details_head_line"
+        android:background="@color/layout_title_bar_bg"
+        android:paddingLeft="@dimen/base_dimen_24"
+        android:paddingRight="@dimen/base_dimen_24">
+
+        <com.jinke.housekeeper.saas.patrol.ui.widget.CustomListView
+            android:id="@+id/out_task_details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 高度30   此处设置宽度无效-->
+    <size android:height="@dimen/base_dimen_60"/>
+    <!-- 圆角弧度 15 -->
+    <corners android:radius="@dimen/base_dimen_30"/>
+    <!-- 变化率 -->
+    <gradient
+        android:endColor="#FFFFFF"
+        android:startColor="#FFFFFF" />
+
+    <stroke
+        android:width="@dimen/base_dimen_2"
+        android:color="#AEAEAE" />
+</shape>

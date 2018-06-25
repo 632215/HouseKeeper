@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grab_single_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_customtitleview"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/news_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:drawableLeft="@drawable/layout_title_bar_back"
+            android:padding="@dimen/base_dimen_12"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_news_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/base_dimen_36" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/activity_main_default_bg_color" />
+
+    <RadioGroup
+        android:id="@+id/news_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_80"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/news_type_warming"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/activity_news_warming"
+            android:lines="1"
+            android:textColor="@drawable/select_group_text" />
+
+
+        <RadioButton
+            android:id="@+id/news_type_pending"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/activity_news_pending"
+            android:lines="1"
+            android:textColor="@drawable/select_group_text" />
+
+        <RadioButton
+            android:id="@+id/news_type_order"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/activity_news_order"
+            android:lines="1"
+            android:textColor="@drawable/select_group_text" />
+
+        <RadioButton
+            android:id="@+id/news_type_announce"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/activity_news_announce"
+            android:lines="1"
+            android:textColor="@drawable/select_group_text" />
+
+        <RadioButton
+            android:id="@+id/news_type_remind"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/activity_news_remind"
+            android:textColor="@drawable/select_group_text" />
+
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/news_view_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/base_dimen_1" />
+
+</LinearLayout>

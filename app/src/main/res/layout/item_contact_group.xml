@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_main_default_bg_color">
+
+    <TextView
+        android:id="@+id/item_contact_group_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/base_dimen_16"
+        android:paddingLeft="@dimen/base_dimen_24"
+        android:paddingTop="@dimen/base_dimen_36"
+        android:text="@string/item_contact_group_company"
+        android:textColor="@color/item_contact_group_color" />
+
+    <TextView
+        android:id="@+id/item_contact_group_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_contact_group_title"
+        android:layout_toRightOf="@+id/item_contact_group_title"
+        android:drawablePadding="@dimen/base_dimen_14"
+        android:drawableRight="@drawable/fragment_user_arrow"
+        android:paddingBottom="@dimen/base_dimen_16"
+        android:paddingTop="@dimen/base_dimen_36"
+        android:textColor="@color/item_contact_group_color"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/item_contact_group_project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_contact_group_company"
+        android:paddingBottom="@dimen/base_dimen_16"
+        android:paddingTop="@dimen/base_dimen_36" />
+</RelativeLayout>

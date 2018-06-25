@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stand_book_object_month"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/stand_book_object_month_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_420"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/base_dimen_24">
+
+        <RelativeLayout
+            android:id="@+id/stand_book_month_1_head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_96"
+            android:layout_alignParentTop="true"
+            android:background="@color/equipment_bg_5">
+
+            <TextView
+                android:id="@+id/stand_book_month_1_before"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/base_dimen_32"
+                android:layout_marginRight="@dimen/base_dimen_50"
+                android:drawableLeft="@drawable/statistics_circle_before"
+                android:drawablePadding="@dimen/base_dimen_6"
+                android:gravity="center"
+                android:text="@string/stand_book_table_1_before"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/stand_book_month_1_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/stand_book_month_1_before"
+                android:layout_toLeftOf="@+id/stand_book_month_1_before"
+                android:drawableLeft="@drawable/statistics_circle_now"
+                android:drawablePadding="@dimen/base_dimen_6"
+                android:gravity="center"
+                android:text="@string/stand_book_table_1_now"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/stand_book_month_1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/base_dimen_30"
+                android:text="@string/stand_book_month_1_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/base_dimen_30" />
+
+        </RelativeLayout>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/stand_book_month_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/stand_book_month_1_head"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/base_dimen_20" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/stand_book_object_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_2"
+        android:layout_below="@+id/stand_book_object_month_1"
+        android:layout_marginTop="@dimen/base_dimen_38"
+        android:background="@color/equipment_bg_3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_420"
+        android:layout_below="@+id/stand_book_object_line"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/base_dimen_40">
+
+        <RelativeLayout
+            android:id="@+id/stand_book_table_2_head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_96"
+            android:layout_alignParentTop="true"
+            android:background="@color/equipment_bg_5">
+
+            <TextView
+                android:id="@+id/stand_book_month_2_before"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/base_dimen_32"
+                android:layout_marginRight="@dimen/base_dimen_50"
+                android:drawableLeft="@drawable/statistics_circle_before"
+                android:drawablePadding="@dimen/base_dimen_6"
+                android:gravity="center"
+                android:text="@string/stand_book_table_1_before"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/stand_book_month_2_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/stand_book_month_2_before"
+                android:layout_toLeftOf="@+id/stand_book_month_2_before"
+                android:drawableLeft="@drawable/statistics_circle_now"
+                android:drawablePadding="@dimen/base_dimen_6"
+                android:gravity="center"
+                android:text="@string/stand_book_month_name"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/stand_book_month_2_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/base_dimen_30"
+                android:text="@string/stand_book_month_2_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/base_dimen_30" />
+
+        </RelativeLayout>
+
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/stand_book_month_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/stand_book_table_2_head"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/base_dimen_20" />
+
+    </LinearLayout>
+
+</RelativeLayout>

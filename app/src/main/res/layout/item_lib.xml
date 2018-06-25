@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/activity_main_default_bg_color"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/base_dimen_20"
+    android:paddingRight="@dimen/base_dimen_20"
+    android:layout_marginBottom="@dimen/base_dimen_16">
+
+    <com.jinke.housekeeper.ui.widget.RecyclerImageView
+        android:id="@+id/iv_lib_standards"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_260" />
+</LinearLayout>

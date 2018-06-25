@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical">
+
+
+    <com.jinke.housekeeper.saas.report.ui.widget.NavigationView
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.jinke.housekeeper.ui.widget.LoadingLayout
+        android:id="@+id/loadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:isFirstVisible="true">
+
+        <www.jinke.com.library.pulltorefresh.PullToRefreshScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.jinke.housekeeper.saas.report.ui.widget.FillListView
+                    android:id="@+id/departFillListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_dimen_20"
+                    android:divider="@color/backgroup_bg"
+                    android:dividerHeight="@dimen/base_dimen_20"
+                    android:groupIndicator="@null" />
+
+
+                <com.jinke.housekeeper.saas.report.ui.widget.FillListView
+                    android:id="@+id/fillListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_dimen_20"
+                    android:divider="@null" />
+            </LinearLayout>
+
+        </www.jinke.com.library.pulltorefresh.PullToRefreshScrollView>
+    </com.jinke.housekeeper.ui.widget.LoadingLayout>
+</LinearLayout>

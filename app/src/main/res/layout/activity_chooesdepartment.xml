@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRegisterBackground"
+    android:orientation="vertical">
+
+    <www.jinke.com.library.widget.NavigationView
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.jinke.housekeeper.saas.report.ui.widget.LoadingLayout
+        android:id="@+id/loadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:isFirstVisible="true">
+
+        <www.jinke.com.library.pulltorefresh.PullToRefreshScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_registerDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_40"
+                android:background="@drawable/shape_frame_bg"
+                android:paddingBottom="@dimen/base_dimen_2"
+                android:paddingLeft="@dimen/base_dimen_40"
+                android:paddingTop="@dimen/base_dimen_2" />
+        </www.jinke.com.library.pulltorefresh.PullToRefreshScrollView>
+    </com.jinke.housekeeper.saas.report.ui.widget.LoadingLayout>
+</LinearLayout>

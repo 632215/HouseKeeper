@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_user_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_main_default_bg_color">
+
+    <www.jinke.com.library.widget.NavigationView
+        android:id="@+id/fragment_user_navigationview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_user_layout_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_user_navigationview"
+        android:layout_marginTop="@dimen/base_dimen_24"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/base_dimen_32"
+        android:paddingLeft="@dimen/base_dimen_24"
+        android:paddingTop="@dimen/base_dimen_32">
+
+        <TextView
+            android:id="@+id/fragment_user_image_head"
+            android:layout_width="@dimen/base_dimen_144"
+            android:layout_height="@dimen/base_dimen_144"
+            android:background="@drawable/fragment_user_head"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="王"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_40" />
+
+        <TextView
+            android:id="@+id/fragment_user_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/fragment_user_image_head"
+            android:layout_marginLeft="@dimen/base_dimen_46"
+            android:layout_toRightOf="@+id/fragment_user_image_head"
+            android:text="@string/fragment_user_name"
+            android:textColor="@color/fragment_user_text_color1"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <TextView
+            android:id="@+id/fragment_user_text_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fragment_user_image_head"
+            android:layout_alignStart="@+id/fragment_user_text_name"
+            android:layout_toRightOf="@+id/fragment_user_image_head"
+            android:text="@string/fragment_user_company"
+            android:textColor="@color/fragment_user_text_color1"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <TextView
+            android:id="@+id/fragment_user_text_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/fragment_user_text_name"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/fragment_user_image_head"
+            android:text="@string/fragment_user_post"
+            android:textColor="@color/fragment_user_text_color1"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <TextView
+            android:id="@+id/fragment_user_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/fragment_user_view"
+            android:gravity="center"
+            android:text="@string/fragment_user_view"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_28" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_user_layout_people_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_user_layout_user_info"
+        android:layout_marginTop="@dimen/base_dimen_24"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/base_dimen_32"
+        android:paddingLeft="@dimen/base_dimen_26"
+        android:paddingTop="@dimen/base_dimen_40">
+
+        <TextView
+            android:id="@+id/fragment_user_text_people_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/fragment_user_review"
+            android:drawablePadding="@dimen/base_dimen_20"
+            android:gravity="center_vertical"
+            android:text="@string/fragment_user_people_review"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <TextView
+            android:id="@+id/fragment_user_text_people_review_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/fragment_user_arrow"
+            android:paddingRight="@dimen/base_dimen_24" />
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/activity_user_info_layout_contact"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/fragment_user_layout_people_review"-->
+        <!--android:background="@color/white"-->
+        <!--&gt;-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/activity_user_info_text_contact"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/base_dimen_26"-->
+            <!--android:background="@drawable/shape_fragment_msg_top_parting_line_1dp"-->
+            <!--android:drawableLeft="@drawable/fragment_user_contact"-->
+            <!--android:drawablePadding="@dimen/base_dimen_20"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingBottom="@dimen/base_dimen_32"-->
+            <!--android:paddingTop="@dimen/base_dimen_32"-->
+            <!--android:text="@string/fragment_user_contact"-->
+            <!--android:textSize="@dimen/base_dimen_28" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/fragment_user_text_contact_more"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:drawableRight="@drawable/fragment_user_arrow"-->
+            <!--android:paddingRight="@dimen/base_dimen_24" />-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/fragment_user_layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_user_layout_people_review"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/fragment_user_text_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_26"
+            android:background="@drawable/shape_fragment_msg_top_parting_line_1dp"
+            android:drawableLeft="@drawable/fragment_user_password"
+            android:drawablePadding="@dimen/base_dimen_20"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/base_dimen_32"
+            android:paddingTop="@dimen/base_dimen_32"
+            android:text="@string/fragment_user_password"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <TextView
+            android:id="@+id/fragment_user_text_password_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/base_dimen_38"
+            android:drawableRight="@drawable/fragment_user_arrow"
+            android:gravity="right"
+            android:paddingRight="@dimen/base_dimen_24"
+            android:text="@string/fragment_user_password"
+            android:textColor="@color/fragment_user_text_color2"
+            android:textSize="@dimen/base_dimen_28" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_user_layout_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_user_layout_password"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/fragment_user_text_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_26"
+            android:background="@drawable/shape_fragment_msg_top_parting_line_1dp"
+            android:drawableLeft="@drawable/fragment_user_version"
+            android:drawablePadding="@dimen/base_dimen_20"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/base_dimen_32"
+            android:paddingTop="@dimen/base_dimen_32"
+            android:text="@string/fragment_user_version" />
+
+        <TextView
+            android:id="@+id/fragment_user_text_version_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/fragment_user_arrow"
+            android:paddingRight="@dimen/base_dimen_24" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_user_layout_push"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_user_layout_version"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/fragment_user_text_push"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_26"
+            android:background="@drawable/shape_fragment_msg_top_parting_line_1dp"
+            android:drawableLeft="@drawable/push_ico"
+            android:drawablePadding="@dimen/base_dimen_20"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/base_dimen_32"
+            android:paddingTop="@dimen/base_dimen_32"
+            android:text="@string/fragment_user_push" />
+
+        <ImageView
+            android:id="@+id/fragment_user_text_push_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/push_state_open_button"
+            android:layout_marginRight="@dimen/base_dimen_24" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fragment_user_text_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_user_layout_push"
+        android:layout_marginTop="@dimen/base_dimen_56"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="@dimen/base_dimen_28"
+        android:paddingTop="@dimen/base_dimen_28"
+        android:text="@string/fragment_user_exit"
+        android:textColor="@color/fragment_user_text_color3" />
+</RelativeLayout>

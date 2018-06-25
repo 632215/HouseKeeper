@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_parting_bottom_12dp"
+    android:paddingBottom="@dimen/base_dimen_24"
+    android:paddingLeft="@dimen/base_dimen_22">
+
+    <TextView
+        android:id="@+id/item_contact_tx_head"
+        android:layout_width="@dimen/base_dimen_74"
+        android:layout_height="@dimen/base_dimen_74"
+        android:layout_marginBottom="@dimen/base_dimen_28"
+        android:layout_marginTop="@dimen/base_dimen_26"
+        android:background="@drawable/shape_item_contact_yellow"
+        android:gravity="center"
+        android:text="天"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base_dimen_32" />
+
+    <TextView
+        android:id="@+id/item_contact_tx_head_office"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_contact_tx_head"
+        android:layout_alignTop="@+id/item_contact_tx_head"
+        android:layout_marginLeft="@dimen/base_dimen_16"
+        android:layout_toRightOf="@id/item_contact_tx_head"
+        android:gravity="center_vertical"
+        android:textColor="@color/item_contact_text_black"
+        android:textSize="@dimen/base_dimen_32" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/item_contact_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/item_contact_tx_head"
+        android:layout_below="@+id/item_contact_tx_head" />
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        android:background="@drawable/icon_work_bench_title"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/fragment_workbench_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/base_dimen_100"
+            android:drawablePadding="@dimen/base_dimen_16"
+            android:drawableRight="@drawable/icon_work_bench_down_white"
+            android:gravity="center"
+            android:text="@string/fragment_workbench_title_project"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_36" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/icon_bench_top"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_work_order_pool"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/icon_gong_dan_chi"
+                    android:gravity="center"
+                    android:text="@string/activity_grab_single_grab_work"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_news_report_repair"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/icon_work_bench_bao_shi"
+                    android:gravity="center"
+                    android:text="@string/patrol_work_bench_bao_xiu"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+
+                    android:id="@+id/tv_work_bench_contacts"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/icon_work_bench_tong_xun_lv"
+                    android:gravity="center"
+                    android:text="@string/fragment_user_contact"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_work_bench_approval"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/icon_work_bench_shen_pi"
+                    android:gravity="center"
+                    android:text="@string/fragment_workbench_Approval"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_inspection_application"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_workbench_layout_title"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_work_bench_tx_left"
+                android:drawablePadding="6dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="@dimen/base_dimen_24"
+                android:text="@string/work_bench_inspection_application"
+                android:textColor="@color/fragment_workbench_text_color1"
+                android:textSize="@dimen/base_dimen_32" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_inspection_application"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_inspection_application"
+                android:background="@drawable/shape_fragment_msg_top_parting_line_1dp" />
+
+            <TextView
+                android:id="@+id/tv_commit_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_20"
+                android:layout_below="@+id/rv_inspection_application"
+                android:background="@color/work_bench_gray_line" />
+
+            <TextView
+                android:id="@+id/tv_commit_manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_commit_line"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_work_bench_tx_left"
+                android:drawablePadding="6dp"
+                android:padding="@dimen/base_dimen_24"
+                android:text="@string/fragment_workbench_commit_manager"
+                android:textColor="@color/fragment_workbench_text_color1"
+                android:textSize="@dimen/base_dimen_32" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_commit_manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_commit_manager"
+                android:background="@drawable/shape_fragment_msg_top_parting_line_1dp" />
+
+            <TextView
+                android:id="@+id/tv_xun_jian_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_20"
+                android:layout_below="@+id/rv_commit_manager"
+                android:background="@color/work_bench_gray_line" />
+
+            <TextView
+                android:id="@+id/tvt_commonly_application"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_xun_jian_line"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_work_bench_tx_left"
+                android:drawablePadding="6dp"
+                android:padding="@dimen/base_dimen_24"
+                android:text="验房管理"
+                android:textColor="@color/fragment_workbench_text_color1"
+                android:textSize="@dimen/base_dimen_32" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_commonly_application"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvt_commonly_application"
+                android:background="@drawable/shape_fragment_msg_top_parting_line_1dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

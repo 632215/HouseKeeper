@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_68">
+
+        <TextView
+            android:id="@+id/plan_record_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="超时"
+            android:textSize="@dimen/base_dimen_32"
+            android:textColor="@color/text_color_21" />
+
+        <TextView
+            android:id="@+id/plan_record_time_out_size"
+            android:layout_toRightOf="@+id/plan_record_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_28"
+            android:textColor="@color/layout_title_bar_bg"
+            android:text="0个"
+            android:gravity="center"
+            android:background="@drawable/plan_record_timeout_ico"/>
+
+
+        <TextView
+            android:id="@+id/plan_record_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/base_dimen_28"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_176"
+            android:layout_toLeftOf="@+id/plan_record_next_ico"
+            android:text="金科十年城15:54:34-15:55:06"
+            android:textColor="@color/text_color_21" />
+
+        <TextView
+            android:id="@+id/plan_record_next_ico"
+            android:background="@drawable/plan_record_timeout_next_ico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

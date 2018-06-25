@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/equipment_bg"
+    tools:context="com.jinke.housekeeper.saas.equipment.ui.activity.AddIDActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/add_id_list_save_layout"
+        android:layout_marginTop="@dimen/base_dimen_22"
+        android:background="@color/equipment_title_bg"
+        android:paddingLeft="@dimen/base_dimen_22"
+        android:paddingRight="@dimen/base_dimen_20">
+
+        <TextView
+            android:id="@+id/add_id_list_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_38"
+            android:text="@string/add_id_list_hint"
+            android:textColor="@color/equipment_text_14"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <LinearLayout
+            android:id="@+id/add_id_list_save_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_id_list_hint"
+            android:layout_marginTop="@dimen/base_dimen_44"
+            android:background="@color/equipment_bg_3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_dimen_12"
+                android:layout_marginLeft="@dimen/base_dimen_22"
+                android:layout_marginTop="@dimen/base_dimen_12"
+                android:layout_weight="1"
+                android:text="@string/add_id_list_hint_id"
+                android:textColor="@color/equipment_title_bg"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_dimen_12"
+                android:layout_marginLeft="@dimen/base_dimen_70"
+                android:layout_marginTop="@dimen/base_dimen_12"
+                android:layout_weight="1"
+                android:text="@string/add_id_list_hint_name"
+                android:textColor="@color/equipment_title_bg"
+                android:textSize="@dimen/base_dimen_28" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_below="@+id/add_id_list_save_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_20"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/equipment_bg_4"
+                        android:paddingBottom="@dimen/base_dimen_18"
+                        android:paddingTop="@dimen/base_dimen_18"
+                        android:paddingLeft="@dimen/base_dimen_18"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/equipment_bg_1"
+                        android:paddingBottom="@dimen/base_dimen_18"
+                        android:paddingTop="@dimen/base_dimen_18"
+                        android:paddingLeft="@dimen/base_dimen_18"/>
+
+                </LinearLayout>
+
+                <com.jinke.housekeeper.saas.equipment.ui.widget.CustomListView
+                    android:id="@+id/add_id_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_id_list_save_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/equipment_title_bg"
+        android:paddingBottom="@dimen/base_dimen_16"
+        android:paddingTop="@dimen/base_dimen_16">
+
+        <TextView
+            android:id="@+id/add_id_list_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/equipment_two_button"
+            android:gravity="center"
+            android:text="@string/add_id_list_save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_32" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

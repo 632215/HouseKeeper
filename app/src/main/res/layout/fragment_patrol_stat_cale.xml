@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/date_picker_time_chose_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_104"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/date_picker_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/date_picker_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_dimen_24"
+                        android:text="2"
+                        android:textColor="@color/text_color_25"
+                        android:textSize="@dimen/base_dimen_32" />
+
+                    <TextView
+                        android:textColor="@color/text_color_25"
+                        android:id="@+id/date_picker_month_hint"
+                        android:textSize="@dimen/base_dimen_32"
+                        android:text="@string/month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/date_picker_month"/>
+
+                    <TextView
+                        android:id="@+id/date_picker_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/date_picker_month"
+                        android:layout_marginLeft="@dimen/base_dimen_12"
+                        android:layout_toRightOf="@+id/date_picker_month_hint"
+                        android:drawableRight="@drawable/date_picker_down_ico"
+                        android:text="2018"
+                        android:textColor="@color/newslist_text_gray"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <com.jinke.housekeeper.saas.patrol.ui.widget.sign_calender.DatePicker2
+                android:id="@+id/date_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_picker_time_chose_layout" />
+
+            <RelativeLayout
+                android:id="@+id/date_picker_time_hint_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_104"
+                android:layout_below="@+id/date_picker"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/date_picker_leak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/date_picker_post"
+                    android:drawableLeft="@drawable/date_picker_leak_ico"
+                    android:drawablePadding="@dimen/base_dimen_22"
+                    android:text="@string/date_picker_leak"
+                    android:textColor="@color/newslist_text_gray" />
+
+                <TextView
+                    android:id="@+id/date_picker_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/base_dimen_24"
+                    android:layout_marginRight="@dimen/base_dimen_24"
+                    android:drawableLeft="@drawable/date_picker_post_ico"
+                    android:drawablePadding="@dimen/base_dimen_22"
+                    android:text="@string/date_picker_post"
+                    android:textColor="@color/newslist_text_gray" />
+
+
+                <TextView
+                    android:id="@+id/date_picker_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/date_picker_post"
+                    android:drawableLeft="@drawable/date_picker_normal_ico"
+                    android:drawablePadding="@dimen/base_dimen_22"
+                    android:text="@string/date_picker_normal"
+                    android:textColor="@color/newslist_text_gray" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

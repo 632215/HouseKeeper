@@ -1,0 +1,827 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/equipment_title_bg"
+    tools:context="com.jinke.housekeeper.saas.equipment.ui.fragment.BaseInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/stand_book_administrative_areas_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stand_book_administrative_areas"
+                android:textColor="@color/equipment_text_9"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:id="@+id/stand_book_administrative_areas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_36"
+                android:layout_toRightOf="@+id/stand_book_administrative_areas_text"
+                android:lines="1"
+                android:textColor="@color/equipment_text_8"
+                android:textSize="@dimen/base_dimen_30" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_28">
+
+            <TextView
+                android:id="@+id/stand_book_equipment_number_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stand_book_equipment_number"
+                android:textColor="@color/equipment_text_9"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:id="@+id/stand_book_equipment_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_36"
+                android:layout_toRightOf="@+id/stand_book_equipment_number_text"
+                android:lines="1"
+                android:textColor="@color/equipment_text_8"
+                android:textSize="@dimen/base_dimen_30" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_28">
+
+            <TextView
+                android:id="@+id/stand_book_equipment_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stand_book_equipment_name"
+                android:textColor="@color/equipment_text_9"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:id="@+id/stand_book_equipment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_36"
+                android:layout_toRightOf="@+id/stand_book_equipment_name_text"
+                android:lines="1"
+                android:textColor="@color/equipment_text_8"
+                android:textSize="@dimen/base_dimen_30" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_28">
+
+            <TextView
+                android:id="@+id/stand_book_installation_location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stand_book_installation_location"
+                android:textColor="@color/equipment_text_9"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:id="@+id/stand_book_installation_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_36"
+                android:layout_toRightOf="@+id/stand_book_installation_location_text"
+                android:lines="1"
+                android:textColor="@color/equipment_text_8"
+                android:textSize="@dimen/base_dimen_30" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_marginTop="@dimen/base_dimen_48"
+            android:background="@color/equipment_line_3" />
+
+        <RelativeLayout
+            android:id="@+id/stand_book_equipment_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_12"
+            android:layout_marginTop="@dimen/base_dimen_28">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stand_book_equipment_details"
+                android:textColor="@color/equipment_text_8"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <ImageView
+                android:id="@+id/stand_book_equipment_details_ico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/equipment_next_ico" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/stand_book_equipment_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_28"
+            android:background="@color/equipment_bg_1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_building"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_building"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_quality_assurance"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_quality_assurance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_up_time"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_up_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_down_time"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_down_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_person_liable"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_person_liable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_marginTop="@dimen/base_dimen_24"
+            android:background="@color/equipment_line_4" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:layout_marginTop="@dimen/base_dimen_24"
+            android:text="@string/stand_book_production_unit_information"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_year_date"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_year_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_manufacturer"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_manufacturer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_place_origin"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_place_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_factory_number"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_factory_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_date_production"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_date_production"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_quality_assurance_due"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_quality_assurance_due"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_discard_time_limit"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_discard_time_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_active_time"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_active_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_rejection_time"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_rejection_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_state"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_marginTop="@dimen/base_dimen_24"
+            android:background="@color/equipment_line_4" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:layout_marginTop="@dimen/base_dimen_24"
+            android:text="@string/stand_book_unit_information"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_koriyasu_units"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_koriyasu_units"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_date_start_maintenance_contract"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_date_start_maintenance_contract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_date_end_maintenance_contract"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_date_end_maintenance_contract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_linkman_contacts"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_linkman_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_34">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/stand_book_contact_information"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+            <TextView
+            android:id="@+id/stand_book_contact_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_266"
+            android:lines="1"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:layout_marginTop="@dimen/base_dimen_24"
+                android:background="@color/equipment_line_4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:layout_marginTop="@dimen/base_dimen_24"
+                android:text="@string/stand_book_supplier_information"
+                android:textColor="@color/equipment_text_8"
+                android:textSize="@dimen/base_dimen_26" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_34">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:text="@string/stand_book_supplier"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_26" />
+
+                <TextView
+                    android:id="@+id/stand_book_supplier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_266"
+                    android:lines="1"
+                    android:textColor="@color/equipment_text_8"
+                    android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_34">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:text="@string/stand_book_installation_unit"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_26" />
+
+                <TextView
+                    android:id="@+id/stand_book_installation_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_266"
+                    android:lines="1"
+                    android:textColor="@color/equipment_text_8"
+                    android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_34">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:text="@string/stand_book_installation_contract_no"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_26" />
+
+                <TextView
+                    android:id="@+id/stand_book_installation_contract_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_266"
+                    android:lines="1"
+                    android:textColor="@color/equipment_text_8"
+                    android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_34">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:text="@string/stand_book_installation_contract_date_start"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_26" />
+
+                <TextView
+                    android:id="@+id/stand_book_installation_contract_date_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_266"
+                    android:lines="1"
+                    android:textColor="@color/equipment_text_8"
+                    android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_34">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:text="@string/stand_book_installation_contract_date_end"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_26" />
+
+                <TextView
+                    android:id="@+id/stand_book_installation_contract_date_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_266"
+                    android:lines="1"
+                    android:textColor="@color/equipment_text_8"
+                    android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_dimen_32"
+                android:layout_marginTop="@dimen/base_dimen_34">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:text="@string/stand_book_supplier_state"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_26" />
+
+                <TextView
+                    android:id="@+id/stand_book_supplier_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_266"
+                    android:lines="1"
+                    android:textColor="@color/equipment_text_8"
+                    android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
+

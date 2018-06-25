@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical">
+
+    <www.jinke.com.library.widget.NavigationView
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_80"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/today"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_today_check_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="个人统计"
+            android:textColor="@drawable/color_radiobutton" />
+
+        <RadioButton
+            android:id="@+id/history"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_today_uncheck_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="项目统计"
+            android:textColor="@drawable/color_radiobutton" />
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

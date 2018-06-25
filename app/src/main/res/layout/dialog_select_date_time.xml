@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corners_bg_01">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_426"
+        android:background="@drawable/corners_bg_01"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/remind_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/remind_title"
+            android:textColor="@color/text_color_8"
+            android:textSize="@dimen/base_dimen_34" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:textColor="@color/layout_title_bar_line_2" />
+
+        <TextView
+            android:id="@+id/remind_once_close"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="仅在 *月*日（明天）关闭一次"
+            android:textColor="@color/text_color_10"
+            android:textSize="@dimen/base_dimen_34" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:textColor="@color/layout_title_bar_line_2" />
+
+        <TextView
+            android:id="@+id/remind_repeat_close"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/remind_repeat_close"
+            android:textColor="@color/text_color_10"
+            android:textSize="@dimen/base_dimen_34" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:textColor="@color/layout_title_bar_line_2" />
+
+        <TextView
+            android:id="@+id/remind_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/remind_cancel"
+            android:textColor="@color/text_color_9"
+            android:textSize="@dimen/base_dimen_34" />
+
+    </LinearLayout>
+
+</RelativeLayout>

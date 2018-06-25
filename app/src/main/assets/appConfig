@@ -1,0 +1,34 @@
+## Regular1
+#appUrl="http://api.tq-service.com/oa/"
+#equipmentUrl="http://api.tq-service.com/dian/"
+#patrolUrl="http://api.tq-service.com/dian/"
+#reportUrl="http://api.tq-service.com/oa/"
+#handoverRoomUrl="http://dev-oa.tq-service.com/jiefang/"
+
+## Regular2
+#appUrl="http://oa-api.tq-service/"
+#equipmentUrl="http://oa-api.tq-service/dian/"
+#patrolUrl="http://oa-api.tq-service/dian/"
+#reportUrl="http://oa-api.tq-service/oa/"
+#handoverRoomUrl="http://oa-api.tq-service/jiefang/"
+
+## debug
+#appUrl="http://dev-oa-api.tq-service.com/"
+#equipmentUrl="http://dev-oa-api.tq-service.com/dian/"
+#patrolUrl="http://dev-oa-api.tq-service.com/dian/"
+#reportUrl="http://dev-oa-api.tq-service.com/oa/"
+#handoverRoomUrl="http://dev-oa-api.tq-service.com/jiefang/"
+
+#stringMap.put("appUrl", "");
+#//        stringMap.put("appUrl", "http://10.15.208.183:8080/ch4/");
+#stringMap.put("equipmentUrl", "");//…Ë±∏—≤ºÏ
+#stringMap.put("patrolUrl", "");//—≤∏¸
+#stringMap.put("reportUrl", "");//≈‰÷√—≤ºÏ
+#//        stringMap.put("reportUrl", "http://10.15.208.183:8080/ch4/");//≈‰÷√—≤ºÏ
+#stringMap.put("handoverRoomUrl", "");//Ω”∑ø
+# locality
+appUrl="http://10.15.208.189:8080/Cruiselch4/"
+equipmentUrl="http://10.15.208.189:8089/DeviceMvn/"
+patrolUrl="http://10.15.208.189:8080/tqPatrol/"
+reportUrl="http://10.15.208.189:8080/Cruiselch4/"
+handoverRoomUrl="http://10.15.208.183:8080/device/"

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 连框颜色值 -->
+    <item>
+        <shape>
+            <solid android:color="@color/default_bg_1" />
+        </shape>
+    </item>
+    <!-- 主体背景颜色值 -->
+    <item
+        android:bottom="@dimen/base_dimen_2"
+        android:left="@dimen/base_dimen_2"
+        android:right="@dimen/base_dimen_2"
+        android:top="@dimen/base_dimen_2">
+
+        <!-- 边框里面背景颜色 白色 -->
+        <shape>
+            <solid android:color="@color/equipment_text_18" />
+        </shape>
+    </item>
+
+</layer-list>

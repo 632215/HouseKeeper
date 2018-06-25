@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_backgroup"
+    android:orientation="vertical">
+
+    <com.jinke.housekeeper.saas.report.ui.widget.NavigationView
+        android:id="@+id/titleBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.jinke.housekeeper.ui.widget.LoadingLayout
+        android:id="@+id/loadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleBar"
+        app:isFirstVisible="true">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/base_dimen_30"
+                        android:text="@string/sponsor"
+                        android:textColor="@color/register_text_black"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <TextView
+                        android:id="@+id/sponsor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/base_dimen_30"
+                        android:paddingLeft="@dimen/base_dimen_200"
+                        android:paddingTop="@dimen/base_dimen_30"
+                        android:text="暂无"
+                        android:textColor="@color/register_edit_gray"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <TextView
+                        android:id="@+id/callPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:background="@drawable/shape_red_bg"
+                        android:drawableLeft="@drawable/teliphone"
+                        android:drawablePadding="@dimen/base_dimen_10"
+                        android:padding="@dimen/base_dimen_10"
+                        android:text="拨打电话"
+                        android:textColor="@color/A106"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/base_dimen_2"
+                        android:layout_alignBottom="@+id/sponsor"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:background="@color/dialog" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/base_dimen_30"
+                        android:text="@string/projecttitle"
+                        android:textColor="@color/register_text_black"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <TextView
+                        android:id="@+id/tv_checkdetails_project"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/base_dimen_30"
+                        android:paddingLeft="@dimen/base_dimen_200"
+                        android:paddingTop="@dimen/base_dimen_30"
+                        android:text="暂无"
+                        android:textColor="@color/register_edit_gray"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/base_dimen_2"
+                        android:layout_alignBottom="@+id/tv_checkdetails_project"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:background="@color/dialog" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/base_dimen_30"
+                        android:text="@string/type"
+                        android:textColor="@color/register_text_black"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <TextView
+                        android:id="@+id/tv_checkdetails_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/base_dimen_30"
+                        android:paddingLeft="@dimen/base_dimen_200"
+                        android:paddingTop="@dimen/base_dimen_30"
+                        android:text="暂无"
+                        android:textColor="@color/register_edit_gray"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/base_dimen_2"
+                        android:layout_alignBottom="@+id/tv_checkdetails_type"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:background="@color/dialog" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/base_dimen_30"
+                        android:text="所属房间"
+                        android:textColor="@color/register_text_black"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <TextView
+                        android:id="@+id/tv_check_details_room"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/base_dimen_30"
+                        android:paddingLeft="@dimen/base_dimen_200"
+                        android:paddingTop="@dimen/base_dimen_30"
+                        android:text="暂无"
+                        android:textColor="@color/register_edit_gray"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/base_dimen_2"
+                        android:layout_alignBottom="@+id/tv_check_details_room"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:background="@color/dialog" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/base_dimen_30"
+                        android:text="@string/area"
+                        android:textColor="@color/register_text_black"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <TextView
+                        android:id="@+id/tv_checkdetails_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/base_dimen_30"
+                        android:paddingLeft="@dimen/base_dimen_200"
+                        android:paddingTop="@dimen/base_dimen_30"
+                        android:text="暂无"
+                        android:textColor="@color/register_edit_gray"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/base_dimen_2"
+                        android:layout_alignBottom="@+id/tv_checkdetails_area"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:background="@color/dialog" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/base_dimen_30"
+                        android:text="发起时间"
+                        android:textColor="@color/register_text_black"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <TextView
+                        android:id="@+id/tv_checkdetails_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/base_dimen_30"
+                        android:paddingLeft="@dimen/base_dimen_200"
+                        android:paddingTop="@dimen/base_dimen_30"
+                        android:text="暂无"
+                        android:textColor="@color/register_edit_gray"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/base_dimen_2"
+                        android:layout_alignBottom="@+id/tv_checkdetails_time"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:background="@color/dialog" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/activity_checkdetails_tx_problems"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/base_dimen_30"
+                        android:text="@string/descripe"
+                        android:textColor="@color/register_text_black"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <LinearLayout
+                        android:id="@+id/activity_checkdetails_ll_describe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_dimen_25"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:layout_marginTop="@dimen/base_dimen_30"
+                        android:layout_toRightOf="@+id/activity_checkdetails_tx_problems"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_checkdetails_problem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/base_dimen_30"
+                            android:textSize="@dimen/base_dimen_28"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:id="@+id/voiceLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/base_dimen_30"
+                            android:layout_marginRight="@dimen/base_dimen_200"
+                            android:background="@drawable/shape_login_button_background"
+                            android:visibility="gone">
+
+                            <View
+                                android:id="@+id/voiceAnim"
+                                android:layout_width="@dimen/base_dimen_40"
+                                android:layout_height="@dimen/base_dimen_40"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/base_dimen_10"
+                                android:background="@drawable/v_anim3" />
+
+                            <TextView
+                                android:id="@+id/voiceTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:padding="@dimen/base_dimen_20"
+                                android:text="″"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/base_dimen_28" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <com.jinke.housekeeper.saas.report.ui.widget.MyGridView
+                        android:id="@+id/activity_checkdetails_mygridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/activity_checkdetails_ll_describe"
+                        android:numColumns="3"
+                        android:paddingBottom="@dimen/base_dimen_20"
+                        android:paddingLeft="@dimen/base_dimen_40"
+                        android:paddingRight="@dimen/base_dimen_40"
+                        android:paddingTop="@dimen/base_dimen_20"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_20"
+                    android:background="@color/all_backgroup" />
+
+                <RelativeLayout
+                    android:id="@+id/viewProcessNode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_80">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/base_dimen_30"
+                        android:text="查看流程节点" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="@dimen/base_dimen_30"
+                        android:src="@drawable/choose" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_20"
+                    android:background="@color/all_backgroup" />
+
+                <RadioGroup
+                    android:id="@+id/checkDetails_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_96"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/finish"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selecter_checkdetails_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="整改完成"
+                        android:textColor="@drawable/selecter_radio_text"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/checkDetails_yanshi"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selecter_checkdetails_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="延迟日志"
+                        android:textColor="@drawable/selecter_radio_text" />
+
+                    <RadioButton
+                        android:id="@+id/checkDetails_shenqing"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selecter_checkdetails_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="延时申请"
+                        android:textColor="@drawable/selecter_radio_text" />
+
+
+                    <RadioButton
+                        android:id="@+id/checkDetails_paifa"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selecter_checkdetails_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="派发工单"
+                        android:textColor="@drawable/selecter_radio_text" />
+
+                    <RadioButton
+                        android:id="@+id/checkDetails_jingli"
+                        android:layout_width="@dimen/base_dimen_200"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selecter_checkdetails_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="提交项目经理"
+                        android:textColor="@drawable/selecter_radio_text"
+                        android:visibility="gone" />
+
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_2"
+                    android:background="@color/line" />
+
+                <FrameLayout
+                    android:id="@+id/checkDetails_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill_vertical" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.jinke.housekeeper.ui.widget.LoadingLayout>
+</RelativeLayout>

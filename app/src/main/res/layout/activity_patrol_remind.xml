@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_patrol_remind"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jinke.housekeeper.saas.patrol.ui.activity.PatrolRemindActivity">
+
+    <com.jinke.housekeeper.saas.patrol.ui.widget.LoadingLayout
+        android:id="@+id/activity_patrol_manage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/patrol_remind_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/base_dimen_24"
+            android:divider="@null" />
+
+    </com.jinke.housekeeper.saas.patrol.ui.widget.LoadingLayout>
+
+    <RelativeLayout
+        android:id="@+id/patrol_remind_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/layout_title_bar_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/patrol_remind_empty_hint"
+            android:textColor="@color/layout_title_bar_text_bg"
+            android:textSize="@dimen/base_dimen_34" />
+
+        <TextView
+            android:id="@+id/layout_title_bar_bg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_title_bar_bg"
+            android:layout_centerHorizontal="true"
+            android:text="@string/patrol_remind_empty_hint2"
+            android:textColor="@color/layout_title_bar_text_bg"
+            android:textSize="@dimen/base_dimen_34" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

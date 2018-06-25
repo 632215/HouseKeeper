@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/equipment_link_bg"
+    tools:context="com.jinke.housekeeper.saas.equipment.ui.activity.NFCLinkActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/equipment_demonstration_ico"
+        android:layout_marginBottom="@dimen/base_dimen_98"/>
+
+</RelativeLayout>

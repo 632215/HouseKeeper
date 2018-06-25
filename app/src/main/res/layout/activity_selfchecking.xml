@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRegisterBackground"
+    android:paddingTop="@dimen/base_dimen_20">
+
+    <LinearLayout
+        android:id="@+id/selectLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:background="@color/selfcheckingview"></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_self_checking_project"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/base_dimen_40">
+
+            <TextView
+                android:id="@+id/tv_self_checking_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingTop="@dimen/base_dimen_20"
+                android:text="@string/project_belong"
+                android:textColor="@color/register_text_black"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/self_checking_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/base_dimen_10"
+                android:drawableRight="@drawable/choose"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingRight="@dimen/base_dimen_40"
+                android:paddingTop="@dimen/base_dimen_20"
+                android:text="@string/please_select"
+                android:textColor="@color/register_edit_gray"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:layout_below="@+id/tv_self_checking_project"
+                android:background="@color/selfcheckingview"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_self_checking_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/base_dimen_40">
+
+            <TextView
+                android:id="@+id/tv_self_checking_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingTop="@dimen/base_dimen_20"
+                android:text="@string/type_belong"
+                android:textColor="@color/register_text_black"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/self_checking_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/base_dimen_10"
+                android:drawableRight="@drawable/choose"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingRight="@dimen/base_dimen_40"
+                android:paddingTop="@dimen/base_dimen_20"
+                android:text="@string/please_select"
+                android:textColor="@color/register_edit_gray"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:layout_below="@+id/tv_self_checking_type"
+                android:background="@color/selfcheckingview"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_self_checking_point_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/base_dimen_40">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingTop="@dimen/base_dimen_20"
+                android:text="@string/point_key"
+                android:textColor="@color/register_text_black"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/pointKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/base_dimen_10"
+                android:drawableRight="@drawable/choose"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingRight="@dimen/base_dimen_40"
+                android:paddingTop="@dimen/base_dimen_20"
+                android:text="@string/please_select"
+                android:textColor="@color/register_edit_gray"
+                android:textSize="@dimen/base_dimen_28" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:background="@color/selfcheckingview"></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_selfchecking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/base_dimen_50"
+            android:paddingLeft="@dimen/base_dimen_40"
+            android:paddingTop="@dimen/base_dimen_20">
+
+            <ImageView
+                android:id="@+id/ib_selfchecking_image"
+                android:layout_width="@dimen/base_dimen_144"
+                android:layout_height="@dimen/base_dimen_144"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:src="@drawable/addpicture"
+
+                android:padding="@dimen/base_dimen_10"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/ib_selfchecking_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_120"
+                android:layout_marginTop="@dimen/base_dimen_4"
+                android:background="@null"
+                android:src="@drawable/delete"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:background="@color/selfcheckingview"></View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutBtn"
+        android:layout_below="@+id/selectLayout"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/voiceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/base_dimen_20"
+            android:paddingRight="@dimen/base_dimen_20"
+            android:paddingTop="@dimen/base_dimen_20"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/voiceClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingLeft="@dimen/base_dimen_200"
+                android:paddingRight="@dimen/base_dimen_20"
+                android:paddingTop="@dimen/base_dimen_20"
+                android:src="@drawable/clear" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/voiceClear"
+                android:background="@drawable/shape_login_button_background">
+
+                <View
+                    android:id="@+id/voiceAnim"
+                    android:layout_width="@dimen/base_dimen_40"
+                    android:layout_height="@dimen/base_dimen_40"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_10"
+                    android:background="@drawable/v_anim3" />
+
+                <TextView
+                    android:id="@+id/voiceTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/base_dimen_20"
+                    android:text="56″"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/base_dimen_28" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/textLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base_dimen_20"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/textClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingLeft="@dimen/base_dimen_200"
+                android:paddingRight="@dimen/base_dimen_20"
+                android:paddingTop="@dimen/base_dimen_20"
+                android:src="@drawable/clear" />
+
+            <TextView
+                android:id="@+id/textDescribe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="@dimen/base_dimen_200"
+                android:layout_toRightOf="@+id/textClear"
+                android:background="@drawable/shape_login_button_background"
+                android:padding="@dimen/base_dimen_20"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/base_dimen_28" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:background="@color/selfcheckingview"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/base_dimen_20"
+            android:paddingTop="@dimen/base_dimen_20">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgVoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/base_dimen_20"
+                        android:paddingLeft="@dimen/base_dimen_20"
+                        android:paddingRight="@dimen/base_dimen_20"
+                        android:paddingTop="@dimen/base_dimen_10"
+                        android:src="@drawable/voice" />
+
+                    <com.jinke.housekeeper.saas.report.ui.widget.AudioRecorderButton
+                        android:id="@+id/audioRecorderButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:background="@drawable/voice_btn_press"
+                        android:gravity="center"
+                        android:padding="@dimen/base_dimen_20"
+                        android:text="@string/press_start"
+                        android:textSize="@dimen/base_dimen_28"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:id="@+id/textInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:background="@drawable/shape_self_checking_edit_background"
+                        android:padding="@dimen/base_dimen_20">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/editText"
+                                android:layout_width="@dimen/base_dimen_0"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:background="@null"
+                                android:gravity="start"
+                                android:hint="@string/description_problem"
+                                android:imeOptions="actionSend"
+                                android:textColor="@color/register_text_black"
+                                android:textColorHint="@color/register_edit_gray"
+                                android:textSize="@dimen/base_dimen_28" />
+
+                            <TextView
+                                android:id="@+id/tips"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:padding="@dimen/base_dimen_10"
+                                android:text="@string/textsize"
+                                android:textColor="@color/frame_blue"
+                                android:textSize="@dimen/base_dimen_20" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_selfchecking_commit"
+                android:layout_width="@dimen/base_dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/process_initiated_blue"
+                android:text="@string/btn_selfchecking"
+                android:textColor="@color/white"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <Button
+                android:id="@+id/btn_selfdealing_commit"
+                android:layout_width="@dimen/base_dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/process_initiated_gray"
+                android:text="@string/btn_selfdealing"
+                android:textColor="@color/frame_blue"
+                android:textSize="@dimen/base_dimen_28" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

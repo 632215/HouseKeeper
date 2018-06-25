@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jinke.housekeeper.saas.patrol.ui.widget.LoadingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_patrol_manage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jinke.housekeeper.saas.patrol.ui.activity.PatrolRemindActivity">
+
+    <RelativeLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:isFirstVisible="true">
+
+        <RelativeLayout
+            android:id="@+id/patrol_manage_hint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base_dimen_24">
+
+            <TextView
+                android:id="@+id/patrol_manage_location_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/patrol_manage_location_hint"
+                android:textColor="@color/equipment_title_text"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:id="@+id/patrol_manage_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/patrol_manage_location_hint"
+                android:lines="1"
+                android:textColor="@color/text_color_19"
+                android:textSize="@dimen/base_dimen_32" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/plan_record_list_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/base_dimen_206"
+            android:layout_below="@+id/patrol_manage_hint_layout"
+            android:paddingLeft="@dimen/base_dimen_24"
+            android:paddingRight="@dimen/base_dimen_24">
+
+            <com.jinke.housekeeper.saas.patrol.ui.widget.CustomListView
+                android:id="@+id/plan_record_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:scrollbars="none" />
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/patrol_manage_list_head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_128"
+            android:layout_below="@+id/plan_record_list_layout"
+            android:background="@color/equipment_title_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/base_dimen_24"
+            android:paddingRight="@dimen/base_dimen_24"
+            android:paddingTop="@dimen/base_dimen_40">
+
+            <TextView
+                android:id="@+id/patrol_manage_location_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_weight="128"
+                android:background="@color/equipment_bg_3"
+                android:gravity="center"
+                android:lines="1"
+                android:text="@string/patrol_manage_location_name"
+                android:textColor="@color/equipment_text_5"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:id="@+id/patrol_manage_today_times"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_weight="109"
+                android:background="@color/equipment_bg_3"
+                android:gravity="center"
+                android:lines="1"
+                android:text="@string/patrol_manage_today_times"
+                android:textColor="@color/equipment_text_5"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:id="@+id/patrol_manage_month_times"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_weight="112"
+                android:background="@color/equipment_bg_3"
+                android:gravity="center"
+                android:lines="1"
+                android:text="@string/patrol_manage_month_times"
+                android:textColor="@color/equipment_text_5"
+                android:textSize="@dimen/base_dimen_30" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/patrol_manage_list_head_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_below="@+id/patrol_manage_list_head"
+            android:layout_marginLeft="@dimen/base_dimen_24"
+            android:layout_marginRight="@dimen/base_dimen_24"
+            android:background="@color/equipment_text_18"
+            android:orientation="horizontal" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/patrol_manage_list_head_line"
+            android:background="@color/layout_title_bar_bg"
+            android:paddingBottom="@dimen/base_dimen_50"
+            android:paddingLeft="@dimen/base_dimen_24"
+            android:paddingRight="@dimen/base_dimen_24">
+
+            <com.jinke.housekeeper.saas.patrol.ui.widget.CustomListView
+                android:id="@+id/patrol_manage_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:scrollbars="none" />
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/patrol_manage_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/base_dimen_24"
+            android:layout_marginRight="@dimen/base_dimen_24"
+            android:background="@drawable/add_loction_button" />
+
+    </RelativeLayout>
+
+</com.jinke.housekeeper.saas.patrol.ui.widget.LoadingLayout>

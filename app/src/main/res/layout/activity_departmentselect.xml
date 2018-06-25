@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRegisterBackground"
+    android:orientation="vertical">
+
+    <com.jinke.housekeeper.saas.report.ui.widget.NavigationView
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.jinke.housekeeper.ui.widget.LoadingLayout
+        android:id="@+id/loadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:isFirstVisible="true">
+
+        <www.jinke.com.library.pulltorefresh.PullToRefreshScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/paddingtop_list">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_line"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_2"
+                    android:background="@drawable/shape_text_line_bg"/>
+                <TextView
+                    android:id="@+id/tv_all"
+                    android:layout_below="@+id/tv_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/base_dimen_30"
+                    android:paddingTop="@dimen/base_dimen_30"
+                    android:text="所有类别"
+                    android:paddingLeft="@dimen/base_dimen_40"
+                    android:background="@color/white"
+                    android:textColor="@color/register_text_deepblack"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:id="@+id/tv_driver"
+                    android:layout_below="@+id/tv_all"
+                    android:layout_marginLeft="@dimen/base_dimen_40"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_2"
+                    android:background="@drawable/shape_text_line_bg"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_registerDepartment"
+                    android:layout_below="@+id/tv_driver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/base_dimen_40"
+                    android:paddingTop="@dimen/base_dimen_2" />
+            </RelativeLayout>
+        </www.jinke.com.library.pulltorefresh.PullToRefreshScrollView>
+    </com.jinke.housekeeper.ui.widget.LoadingLayout>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/all_backgroup"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/base_dimen_30">
+
+
+        <TextView
+            android:id="@+id/headImag"
+            android:layout_width="@dimen/base_dimen_72"
+            android:layout_height="@dimen/base_dimen_72"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:background="@drawable/shape_head1"
+            android:gravity="center"
+            android:maxEms="2"
+            android:singleLine="true"
+            android:text="李三"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_20" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/headImag">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/tv_member_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:id="@+id/tv_member_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_40"
+                    android:layout_toRightOf="@+id/tv_member_name"
+                    android:background="@drawable/shape_state_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/base_dimen_4"
+                    android:text="待审核"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/base_dimen_16" />
+
+                <TextView
+                    android:id="@+id/iv_member_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/base_dimen_30" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:layout_alignParentBottom="true"
+                android:background="@color/progress_bg" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

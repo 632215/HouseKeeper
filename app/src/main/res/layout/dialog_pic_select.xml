@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/pic_select_root"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/black_de">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_register_dialog"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="@dimen/base_dimen_120"
+        android:layout_marginLeft="@dimen/base_dimen_120"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_selfchecking_dialog_camera"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base_dimen_20"
+            android:text="@string/camera"
+            android:textColor="@color/black_de"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:background="@color/dialog" />
+
+        <TextView
+            android:id="@+id/tv_selfchecking_dialog_album"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base_dimen_20"
+            android:text="@string/album"
+            android:textColor="@color/black_de"
+            android:textSize="@dimen/base_dimen_28" />
+    </LinearLayout>
+</RelativeLayout>

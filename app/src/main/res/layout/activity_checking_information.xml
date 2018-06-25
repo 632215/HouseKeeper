@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/equipment_bg"
+    android:orientation="vertical"
+    tools:context="com.jinke.housekeeper.saas.equipment.ui.activity.CheckingInformationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/base_dimen_40"
+        android:layout_marginTop="@dimen/base_dimen_28"
+        android:layout_weight="1"
+        android:background="@color/equipment_title_bg"
+        android:paddingLeft="@dimen/base_dimen_24"
+        android:paddingRight="@dimen/base_dimen_16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/equipment_title_bg"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/base_dimen_24">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/checking_information_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/base_dimen_38"
+                    android:layout_marginTop="@dimen/base_dimen_28"
+                    android:drawableLeft="@drawable/equipment_time_ico"
+                    android:drawablePadding="@dimen/base_dimen_12"
+                    android:textSize="@dimen/base_dimen_28" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_24"
+                android:background="@color/equipment_bg_3" />
+
+            <TextView
+                android:id="@+id/checking_information_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_40"
+                android:textColor="@color/equipment_text_6"
+                android:textSize="@dimen/base_dimen_30"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/checking_information_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_6"
+                android:textColor="@color/equipment_text_10"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_40"
+                android:background="@color/equipment_bg_3"
+                android:gravity="center"
+                android:paddingBottom="@dimen/base_dimen_22"
+                android:paddingTop="@dimen/base_dimen_22"
+                android:text="@string/checking_content"
+                android:textColor="@color/equipment_text_5"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/equipment_bg_2">
+
+                <WebView
+                    android:id="@+id/checking_information_info_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/equipment_bg_2"/>
+
+                <TextView
+                    android:id="@+id/checking_information_info_repetition_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_326"
+                    android:background="@color/equipment_bg_2"
+                    android:text="暂无信息"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+
+            <!--<com.jinke.housekeeper.saas.equipment.ui.widget.CustomListView-->
+                <!--android:id="@+id/checking_information_info_list"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@color/equipment_bg_2" />-->
+
+            <RelativeLayout
+                android:id="@+id/checking_repetition_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_4"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/checking_information_info_repetition_list_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/equipment_bg_2">
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/checking_information_info_repetition_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_2"
+                    android:layout_below="@+id/checking_information_info_repetition_list_layout"
+                    android:layout_marginTop="@dimen/base_dimen_40"
+                    android:background="@color/equipment_bg_3" />
+
+                <TextView
+                    android:id="@+id/checking_result_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/checking_information_info_repetition_line"
+                    android:layout_marginTop="@dimen/base_dimen_28"
+                    android:text="@string/checking_result"
+                    android:textColor="@color/equipment_text_14"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:id="@+id/checking_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/checking_information_info_repetition_line"
+                    android:layout_marginTop="@dimen/base_dimen_28"
+                    android:layout_toRightOf="@+id/checking_result_text"
+                    android:text="正常"
+                    android:textColor="@color/equipment_text_14"
+                    android:textSize="@dimen/base_dimen_28" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/checking_finish_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/equipment_title_bg"
+        android:paddingBottom="@dimen/base_dimen_16"
+        android:paddingTop="@dimen/base_dimen_16">
+
+        <TextView
+            android:id="@+id/checking_finish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/base_dimen_24"
+            android:layout_marginRight="@dimen/base_dimen_11"
+            android:layout_weight="1"
+            android:background="@drawable/equipment_two_button"
+            android:gravity="center"
+            android:text="@string/checking_finish"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <TextView
+            android:id="@+id/checking_matter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/base_dimen_11"
+            android:layout_marginRight="@dimen/base_dimen_24"
+            android:layout_weight="1"
+            android:background="@drawable/equipment_two_button"
+            android:gravity="center"
+            android:text="@string/patrol_work_bench_bao_xiu"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_30" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checking_continue_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/equipment_title_bg"
+        android:paddingBottom="@dimen/base_dimen_16"
+        android:paddingTop="@dimen/base_dimen_16"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/checking_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/base_dimen_24"
+            android:layout_marginRight="@dimen/base_dimen_11"
+            android:background="@drawable/equipment_two_button"
+            android:gravity="center"
+            android:text="@string/checking_continue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_30" />
+
+    </LinearLayout>
+
+</LinearLayout>

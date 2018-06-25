@@ -1,0 +1,296 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jinke.housekeeper.saas.patrol.ui.fragment.PatrolContrastiveFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/date_picker_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/date_picker_day_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_104"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_analysis_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/base_dimen_24"
+                        android:drawableLeft="@drawable/icon_anaysis"
+                        android:drawablePadding="5dp"
+                        android:text="@string/date_picker_day_hint_1"
+                        android:textColor="@color/text_color_25"
+                        android:textSize="@dimen/base_dimen_32" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/base_dimen_24">
+
+                        <TextView
+                            android:id="@+id/date_picker_hint_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/date_picker_leak_ico"
+                            android:drawablePadding="@dimen/base_dimen_22"
+                            android:text="@string/date_picker_day_hint_2"
+                            android:textColor="@color/newslist_text_gray"
+                            android:textSize="@dimen/base_dimen_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/date_picker_hint_3"
+                            android:drawableLeft="@drawable/date_picker_normal_ico"
+                            android:drawablePadding="@dimen/base_dimen_22"
+                            android:text="@string/date_picker_day_hint_3"
+                            android:textColor="@color/newslist_text_gray"
+                            android:textSize="@dimen/base_dimen_24" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/date_picker_day_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_358"
+                    android:layout_below="@+id/date_picker_day_layout"
+                    android:gravity="center"
+                    android:text="@string/date_picker_map_empty"
+                    android:textColor="@color/text_color_25"
+                    android:textSize="@dimen/base_dimen_32" />
+
+                <!--<com.github.mikephil.charting.charts.LineChart-->
+                    <!--android:id="@+id/date_picker_day"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/base_dimen_358"-->
+                    <!--android:layout_below="@+id/date_picker_day_layout"-->
+                    <!--android:paddingLeft="@dimen/base_dimen_20"-->
+                    <!--android:visibility="gone" />-->
+
+                <com.jinke.housekeeper.saas.patrol.ui.widget.ChartView
+                    android:id="@+id/date_picker_day"
+                    android:layout_below="@+id/date_picker_day_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_358"
+                    android:layout_centerInParent="true"
+                    app:bgcolor="#ffffff"
+                    app:interval="50dp"
+                    app:isScroll="false"
+                    app:linecolor="#78C7FE"
+                    app:xylinecolor="#979797"
+                    app:xylinewidth="1dp"
+                    app:xytextcolor="#555555"
+                    app:xytextsize="12sp"
+                    android:paddingLeft="@dimen/base_dimen_20"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/date_picker_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_picker_1"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/date_picker_month_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_104"
+                    android:layout_marginTop="@dimen/base_dimen_24"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/base_dimen_24"
+                        android:text="@string/date_picker_month_hint_1"
+                        android:textColor="@color/text_color_25"
+                        android:textSize="@dimen/base_dimen_32" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/base_dimen_24">
+
+                        <TextView
+                            android:id="@+id/date_picker_hint_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/date_picker_leak_ico"
+                            android:drawablePadding="@dimen/base_dimen_22"
+                            android:text="@string/date_picker_month_hint_2"
+                            android:textColor="@color/newslist_text_gray"
+                            android:textSize="@dimen/base_dimen_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/date_picker_hint_2"
+                            android:drawableLeft="@drawable/date_picker_normal_ico"
+                            android:drawablePadding="@dimen/base_dimen_22"
+                            android:text="@string/date_picker_month_hint_3"
+                            android:textColor="@color/newslist_text_gray"
+                            android:textSize="@dimen/base_dimen_24" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/date_picker_month_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_358"
+                    android:layout_below="@+id/date_picker_month_layout"
+                    android:gravity="center"
+                    android:text="@string/date_picker_map_empty"
+                    android:textColor="@color/text_color_25"
+                    android:textSize="@dimen/base_dimen_32" />
+
+                <!--<com.github.mikephil.charting.charts.LineChart-->
+                    <!--android:id="@+id/date_picker_month"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/base_dimen_358"-->
+                    <!--android:layout_below="@+id/date_picker_month_layout"-->
+                    <!--android:paddingLeft="@dimen/base_dimen_20"-->
+                    <!--android:visibility="gone" />-->
+
+                <com.jinke.housekeeper.saas.patrol.ui.widget.ChartView
+                    android:id="@+id/date_picker_month"
+                    android:layout_below="@+id/date_picker_month_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_358"
+                    android:layout_centerInParent="true"
+                    app:bgcolor="#ffffff"
+                    app:interval="50dp"
+                    app:isScroll="false"
+                    app:linecolor="#78C7FE"
+                    app:xylinecolor="#979797"
+                    app:xylinewidth="1dp"
+                    app:xytextcolor="#555555"
+                    app:xytextsize="12sp"
+                    android:paddingLeft="@dimen/base_dimen_20"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_picker_2"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/date_picker_year_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_104"
+                    android:layout_marginTop="@dimen/base_dimen_24"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/base_dimen_24"
+                        android:text="@string/date_picker_year_hint_1"
+                        android:textColor="@color/text_color_25"
+                        android:textSize="@dimen/base_dimen_32" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/base_dimen_24">
+
+                        <TextView
+                            android:id="@+id/date_picker_hint_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/date_picker_leak_ico"
+                            android:drawablePadding="@dimen/base_dimen_22"
+                            android:text="@string/date_picker_year_hint_2"
+                            android:textColor="@color/newslist_text_gray"
+                            android:textSize="@dimen/base_dimen_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/date_picker_hint_1"
+                            android:drawableLeft="@drawable/date_picker_normal_ico"
+                            android:drawablePadding="@dimen/base_dimen_22"
+                            android:text="@string/date_picker_year_hint_3"
+                            android:textColor="@color/newslist_text_gray"
+                            android:textSize="@dimen/base_dimen_24" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/date_picker_year_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_358"
+                    android:layout_below="@+id/date_picker_year_layout"
+                    android:gravity="center"
+                    android:text="@string/date_picker_map_empty"
+                    android:textColor="@color/text_color_25"
+                    android:textSize="@dimen/base_dimen_32" />
+
+                <!--<com.github.mikephil.charting.charts.LineChart-->
+                    <!--android:id="@+id/date_picker_year"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/base_dimen_358"-->
+                    <!--android:layout_below="@+id/date_picker_year_layout"-->
+                    <!--android:paddingLeft="@dimen/base_dimen_20"-->
+                    <!--android:visibility="gone" />-->
+
+                <com.jinke.housekeeper.saas.patrol.ui.widget.ChartView
+                    android:id="@+id/date_picker_year"
+                    android:layout_below="@+id/date_picker_year_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_358"
+                    android:layout_centerInParent="true"
+                    app:bgcolor="#ffffff"
+                    app:interval="50dp"
+                    app:isScroll="false"
+                    app:linecolor="#78C7FE"
+                    app:xylinecolor="#979797"
+                    app:xylinewidth="1dp"
+                    app:xytextcolor="#555555"
+                    app:xytextsize="12sp"
+                    android:paddingLeft="@dimen/base_dimen_20"
+                    android:visibility="gone"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

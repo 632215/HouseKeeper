@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_title_bg"
+    android:orientation="vertical">
+
+    <www.jinke.com.library.widget.NavigationView
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_80"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ToBeRectified"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_today_check_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="待整改"
+            android:textColor="@drawable/color_radiobutton" />
+
+        <RadioButton
+            android:id="@+id/history"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_today_uncheck_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已整改"
+            android:textColor="@drawable/color_radiobutton" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:background="@color/line" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_80"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/all"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@color/black_de" />
+
+
+        <RadioButton
+            android:id="@+id/today"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="今日"
+            android:textColor="@color/black_de" />
+
+
+        <RadioButton
+            android:id="@+id/yesterday"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_dimen_20"
+            android:paddingTop="@dimen/base_dimen_20"
+            android:text="全部"
+            android:textColor="@color/black_de" />
+
+
+        <RadioButton
+            android:id="@+id/filter"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:drawableRight="@drawable/angledown"
+            android:gravity="center"
+            android:paddingLeft="@dimen/base_dimen_40"
+            android:paddingRight="@dimen/base_dimen_40"
+            android:text="筛选"
+            android:textColor="@color/black_de" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:background="@color/line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

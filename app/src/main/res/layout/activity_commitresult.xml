@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_backgroup"
+    android:orientation="vertical">
+
+    <com.jinke.housekeeper.saas.report.ui.widget.NavigationView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/base_dimen_152"
+        android:src="@drawable/icon_waiting_upload_day" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/base_dimen_64"
+        android:text="上传完毕"
+        android:textColor="#15181B"
+        android:textSize="@dimen/base_dimen_32" />
+
+    <TextView
+        android:id="@+id/tvExplain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:lines="2"
+        android:maxEms="15"
+        android:paddingTop="@dimen/base_dimen_20"
+        android:text="您的上传报事可在“巡查处理-我的报事”中查看" />
+
+    <LinearLayout
+        android:id="@+id/Inspections_continue_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_64"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_inspection_processing" />
+
+            <TextView
+                android:id="@+id/returnHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="返回首页"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/continueInspections"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_continue_inspection"
+            android:gravity="center"
+            android:paddingLeft="@dimen/base_dimen_10"
+            android:text="继续巡检"
+            android:textColor="@color/frame_blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Inspections_continue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_64"
+        android:layout_marginTop="@dimen/base_dimen_64"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/continueInspections_continue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="继续巡更"
+            android:textColor="@color/frame_blue" />
+    </LinearLayout>
+
+</LinearLayout>

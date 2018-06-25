@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/equipment_title_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/equipment_polling_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/equipment_polling_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_28"
+            android:layout_marginTop="@dimen/base_dimen_28"
+            android:drawableLeft="@drawable/equipment_time_ico"
+            android:drawablePadding="@dimen/base_dimen_12"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <TextView
+            android:id="@+id/equipment_polling_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/base_dimen_28"
+            android:layout_marginRight="@dimen/base_dimen_16"
+            android:layout_marginTop="@dimen/base_dimen_28"
+            android:drawablePadding="@dimen/base_dimen_12"
+            android:drawableRight="@drawable/equipment_next_ico"
+            android:text="@string/daily_patrol_pack_down"
+            android:textSize="@dimen/base_dimen_28" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/equipment_title_bg"
+            android:orientation="vertical">
+
+            <com.jinke.housekeeper.saas.equipment.ui.widget.CustomListView
+                android:id="@+id/daily_patrol_record_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_2"
+        android:layout_marginBottom="@dimen/base_dimen_12"
+        android:background="@color/equipment_line_2" />
+
+
+</LinearLayout>

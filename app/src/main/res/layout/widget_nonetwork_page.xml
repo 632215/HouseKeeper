@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+<!--网络异常-->
+    <ImageView
+        android:id="@+id/no_network_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_140"
+        android:src="@drawable/empty_wifi" />
+
+    <TextView
+        android:id="@+id/no_network_st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/base_dimen_20"
+        android:layout_marginTop="@dimen/base_dimen_40"
+        android:text="网络连接失败"
+        android:textColor="@color/black"
+        android:textSize="@dimen/base_dimen_36" />
+
+    <TextView
+        android:id="@+id/no_network_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/base_dimen_20"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:text="请检查您的网络环境是否正常"
+        android:textColor="@color/base_text_color_light" />
+
+    <TextView
+        android:id="@+id/no_network_reload_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_40"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/base_dimen_14"
+        android:paddingLeft="@dimen/base_dimen_36"
+        android:paddingRight="@dimen/base_dimen_36"
+        android:paddingTop="@dimen/base_dimen_14"
+        android:text="刷     新"
+        android:background="@drawable/shape_blue_background"
+        android:textColor="@color/frame_blue" />
+
+
+</LinearLayout>

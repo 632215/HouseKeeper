@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical">
+
+    <com.jinke.housekeeper.ui.widget.LoadingLayout
+        android:id="@+id/loadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:isFirstVisible="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/base_dimen_20">
+
+                <RelativeLayout
+                    android:id="@+id/fengongsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_96"
+                    android:layout_alignParentTop="true"
+                    android:background="#f5f5f7">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:text="巡查统计"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/base_dimen_30"
+                        android:id="@+id/textView" />
+
+                    <HorizontalScrollView
+                        android:layout_centerVertical="true"
+                        android:layout_width="@dimen/base_dimen_260"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="17dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="17dp">
+
+                        <TextView
+                            android:layout_gravity="end"
+                            android:id="@+id/tx_bluerectangle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="17dp"
+                            android:drawableLeft="@drawable/location"
+                            android:drawablePadding="@dimen/base_dimen_6"
+                            android:gravity="center"
+                            android:text="重庆分公司"
+                            android:drawableRight="@drawable/returnqq"
+                            android:textColor="@color/frame_blue"
+                            android:layout_alignTop="@+id/textView"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="17dp" />
+
+                    </HorizontalScrollView>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/fen_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fengongsi"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/base_dimen_30">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/blue"
+                        android:drawablePadding="@dimen/base_dimen_6"
+                        android:text="整改"
+                        android:textColor="@color/gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_dimen_20"
+                        android:drawableLeft="@drawable/greay"
+                        android:drawablePadding="@dimen/base_dimen_6"
+                        android:text="发现"
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rec_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_360"
+                    android:layout_below="@+id/fen_title"
+                    android:paddingLeft="@dimen/base_dimen_20" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/xuancha"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_96"
+                    android:layout_alignParentTop="true"
+                    android:background="#f5f5f7">
+
+                    <TextView
+                        android:id="@+id/tx_xuancharectangle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/base_dimen_30"
+                        android:drawableLeft="@drawable/sort"
+                        android:drawablePadding="@dimen/base_dimen_6"
+                        android:drawableRight="@drawable/returnqq"
+                        android:gravity="center"
+                        android:text="所有类别"
+                        android:textColor="@color/frame_blue" />
+
+                    <HorizontalScrollView
+                        android:layout_width="@dimen/base_dimen_260"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:layout_toLeftOf="@+id/tx_xuancharectangle">
+
+                        <TextView
+                            android:layout_gravity="end"
+                            android:id="@+id/tx_xunchaCompay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/tx_xuancharectangle"
+                            android:layout_marginRight="@dimen/base_dimen_20"
+                            android:drawableRight="@drawable/returnqq"
+                            android:drawableLeft="@drawable/group"
+                            android:drawablePadding="@dimen/base_dimen_6"
+                            android:text="重庆分公司"
+                            android:textColor="@color/frame_blue" />
+
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:text="巡查问题"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/base_dimen_30" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/xuancha_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/xuancha"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/base_dimen_30">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/green"
+                        android:drawablePadding="@dimen/base_dimen_6"
+                        android:text="整改"
+                        android:textColor="@color/gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_dimen_20"
+                        android:drawableLeft="@drawable/greay"
+                        android:drawablePadding="@dimen/base_dimen_6"
+                        android:text="发现"
+                        android:textColor="@color/gray" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rec_xuancha"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_360"
+                    android:layout_below="@+id/xuancha_title"
+                    android:paddingLeft="@dimen/base_dimen_20" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/Inspection"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_96"
+                    android:layout_alignParentTop="true"
+                    android:background="#f5f5f7">
+
+                    <TextView
+                        android:id="@+id/tx_Inspectionrectangle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/base_dimen_30"
+                        android:drawableLeft="@drawable/sort"
+                        android:drawablePadding="@dimen/base_dimen_6"
+                        android:drawableRight="@drawable/returnqq"
+                        android:gravity="center"
+                        android:text="所有类别"
+                        android:textColor="@color/frame_blue" />
+
+                    <HorizontalScrollView
+                        android:layout_width="@dimen/base_dimen_260"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignBottom="@+id/tx_Inspectionrectangle"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:layout_toLeftOf="@+id/tx_Inspectionrectangle">
+
+                        <TextView
+                            android:layout_gravity="end"
+                            android:id="@+id/tx_InspectionCompay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/group"
+                            android:drawablePadding="@dimen/base_dimen_6"
+                            android:drawableRight="@drawable/returnqq"
+                            android:text="重庆分公司"
+                            android:textColor="@color/frame_blue" />
+
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:text="巡查问题"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/base_dimen_30" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/Inspection_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Inspection"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/base_dimen_30">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/green"
+                        android:drawablePadding="@dimen/base_dimen_6"
+                        android:text="整改"
+                        android:textColor="@color/gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_dimen_20"
+                        android:drawableLeft="@drawable/greay"
+                        android:drawablePadding="@dimen/base_dimen_6"
+                        android:text="发现"
+                        android:textColor="@color/gray" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rec_Inspection"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_360"
+                    android:layout_below="@+id/Inspection_title"
+                    android:paddingLeft="@dimen/base_dimen_20" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</com.jinke.housekeeper.ui.widget.LoadingLayout>
+
+</LinearLayout>

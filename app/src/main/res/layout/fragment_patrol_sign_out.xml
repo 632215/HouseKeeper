@@ -1,0 +1,248 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jinke.housekeeper.saas.patrol.ui.fragment.PatrolSignOutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/base_dimen_24"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/layout_title_bar_bg"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/base_dimen_24"
+            android:paddingRight="@dimen/base_dimen_24">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_112"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/patrol_personnel"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <TextView
+                    android:id="@+id/patrolling_personnel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="@dimen/base_dimen_30" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:background="@color/layout_title_bar_line" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/layout_title_bar_bg"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/base_dimen_24"
+            android:paddingRight="@dimen/base_dimen_24">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_112"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/patrol_position"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <TextView
+                    android:id="@+id/patrolling_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="@dimen/base_dimen_30" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:background="@color/layout_title_bar_line" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/layout_title_bar_bg"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/base_dimen_24"
+            android:paddingRight="@dimen/base_dimen_24">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_112"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/patrol_sign_in_time"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <TextView
+                    android:id="@+id/patrol_sign_in_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="@dimen/base_dimen_30" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:background="@color/layout_title_bar_line" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/layout_title_bar_bg"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/base_dimen_24"
+            android:paddingRight="@dimen/base_dimen_24">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_112"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/patrol_sign_out_time"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <TextView
+                    android:id="@+id/patrol_sign_out_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="@dimen/base_dimen_30" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:background="@color/layout_title_bar_line" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/layout_title_bar_bg"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/base_dimen_24"
+            android:paddingRight="@dimen/base_dimen_24">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_112"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/patrol_frequencies"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <TextView
+                    android:id="@+id/patrol_frequencies"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="@dimen/base_dimen_30" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:background="@color/layout_title_bar_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_112"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/patrol_leak_detection"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <TextView
+                    android:id="@+id/patrol_leak_detection"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/text_color_22"
+                    android:textSize="@dimen/base_dimen_30" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:background="@color/layout_title_bar_line" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sign_out_sure_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_104"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/base_dimen_192"
+        android:layout_marginLeft="@dimen/base_dimen_24"
+        android:layout_marginRight="@dimen/base_dimen_24"
+        android:background="@drawable/corners_blue_bg"
+        android:gravity="center"
+        android:text="@string/activity_patrol_sure"
+        android:textColor="@color/layout_title_bar_bg"
+        android:textSize="@dimen/base_dimen_30" />
+
+</FrameLayout>

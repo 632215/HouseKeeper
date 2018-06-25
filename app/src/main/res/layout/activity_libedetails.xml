@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical">
+
+    <www.jinke.com.library.widget.NavigationView
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.jinke.housekeeper.ui.widget.LoadingLayout
+        android:id="@+id/loadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:isFirstVisible="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottom_line" />
+
+            <LinearLayout
+                android:id="@+id/bottom_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/checkDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_96"
+                    android:layout_marginLeft="@dimen/base_dimen_40"
+                    android:layout_marginRight="@dimen/base_dimen_40"
+                    android:layout_marginTop="@dimen/base_dimen_60"
+                    android:background="@drawable/shape_login_button_background"
+                    android:gravity="center"
+                    android:text="报事报修"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/base_dimen_32" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_40"
+                    android:background="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.jinke.housekeeper.ui.widget.LoadingLayout>
+</LinearLayout>

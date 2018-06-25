@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/frame_blue" />
+        </shape>
+    </item>
+
+    <item android:bottom="@dimen/base_dimen_4">
+        <shape>
+            <solid android:color="@color/white" />
+        </shape>
+        <selector>
+            <item
+                android:color="@color/frame_blue"
+                android:state_pressed="true" />
+            <item android:color="@color/radio_group" />
+        </selector>
+    </item>
+</layer-list>

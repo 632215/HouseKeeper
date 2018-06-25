@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/three_table_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/base_dimen_14"
+        android:layout_marginTop="@dimen/base_dimen_14">
+
+        <TextView
+            android:id="@+id/three_table_details_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_40"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_26" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/base_dimen_18"
+            android:drawableRight="@drawable/equipment_next_ico"
+            android:textColor="@color/equipment_text_8"
+            android:textSize="@dimen/base_dimen_26" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/item_contact_project_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_contact_project_tx_project"
+        android:layout_alignTop="@+id/item_contact_project_tx_project"
+        android:layout_marginLeft="@dimen/base_dimen_18"
+        android:src="@drawable/item_contact_project_right_angle"
+        android:textColor="@color/item_contact_text_gray" />
+
+    <TextView
+        android:id="@+id/item_contact_project_tx_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_40"
+        android:layout_toRightOf="@+id/item_contact_project_img"
+        android:background="@drawable/shape_parting_top_1dp"
+        android:paddingBottom="@dimen/base_dimen_28"
+        android:paddingTop="@dimen/base_dimen_29"
+        android:textColor="@color/item_contact_text_gray" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/item_contact_project_tx_num"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:drawablePadding="@dimen/base_dimen_12"-->
+    <!--android:drawableRight="@drawable/item_contact_arror_right"-->
+    <!--android:paddingBottom="@dimen/base_dimen_28"-->
+    <!--android:paddingRight="@dimen/base_dimen_24"-->
+    <!--android:paddingTop="@dimen/base_dimen_29"-->
+    <!--android:textColor="@color/item_contact_text_gray" />-->
+</RelativeLayout>

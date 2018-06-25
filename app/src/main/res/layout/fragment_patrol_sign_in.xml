@@ -1,0 +1,420 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jinke.housekeeper.saas.patrol.ui.fragment.PatrolSignInFragment">
+
+    <com.jinke.housekeeper.saas.patrol.ui.widget.LoadingLayout
+        android:id="@+id/fragment_patrol_sign_in_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/sign_out_button_layout">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/patrol_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/base_dimen_24"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/layout_title_bar_bg"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/base_dimen_24"
+                            android:paddingRight="@dimen/base_dimen_24">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/base_dimen_112"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="@string/patrol_personnel"
+                                    android:textColor="@color/text_color_1"
+                                    android:textSize="@dimen/base_dimen_30" />
+
+                                <TextView
+                                    android:id="@+id/patrol_personnel"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical|right"
+                                    android:textColor="@color/text_color_2"
+                                    android:textSize="@dimen/base_dimen_30" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/base_dimen_2"
+                                android:background="@color/layout_title_bar_line" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/layout_title_bar_bg"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/base_dimen_24"
+                            android:paddingRight="@dimen/base_dimen_24">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/base_dimen_112"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="@string/patrol_position"
+                                    android:textColor="@color/text_color_1"
+                                    android:textSize="@dimen/base_dimen_30" />
+
+                                <TextView
+                                    android:id="@+id/patrol_position"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical|right"
+                                    android:textColor="@color/text_color_2"
+                                    android:textSize="@dimen/base_dimen_30" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/base_dimen_2"
+                                android:background="@color/layout_title_bar_line" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/layout_title_bar_bg"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/base_dimen_24"
+                            android:paddingRight="@dimen/base_dimen_24">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/base_dimen_112"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/patrol_now_time_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="@string/patrol_now_time"
+                                    android:textColor="@color/text_color_1"
+                                    android:textSize="@dimen/base_dimen_30" />
+
+                                <TextView
+                                    android:id="@+id/patrol_now_time"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical|right"
+                                    android:textColor="@color/text_color_2"
+                                    android:textSize="@dimen/base_dimen_30" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/base_dimen_2"
+                                android:background="@color/layout_title_bar_line" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/patrol_way"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/patrol_info"
+                        android:layout_marginTop="@dimen/base_dimen_24"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/base_dimen_224"
+                            android:background="@color/layout_title_bar_bg"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/base_dimen_112"
+                                android:paddingLeft="@dimen/base_dimen_24"
+                                android:paddingRight="@dimen/base_dimen_24">
+
+                                <TextView
+                                    android:id="@+id/patrol_way_hint"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:drawablePadding="@dimen/base_dimen_12"
+                                    android:gravity="center"
+                                    android:text="@string/patrol_way"
+                                    android:textColor="@color/text_color_20"
+                                    android:textSize="@dimen/base_dimen_30" />
+
+                                <RelativeLayout
+                                    android:id="@+id/patrol_plan_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_toEndOf="@+id/patrol_way_hint">
+
+                                    <HorizontalScrollView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="@dimen/base_dimen_24"
+                                        android:layout_toStartOf="@+id/patrol_plan_ico"
+                                        android:scrollbars="none">
+
+                                        <TextView
+                                            android:id="@+id/patrol_plan_name"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center_vertical|right"
+                                            android:textColor="@color/patrol_remind_bg"
+                                            android:textSize="@dimen/base_dimen_30" />
+
+                                    </HorizontalScrollView>
+
+                                    <TextView
+                                        android:id="@+id/patrol_plan_ico"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:drawablePadding="@dimen/base_dimen_12"
+                                        android:drawableRight="@drawable/patrol_remind_next"
+                                        android:text="@string/please_select"
+                                        android:textColor="@color/text_color_21" />
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/base_dimen_1"
+                                android:background="@color/layout_title_bar_line" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/base_dimen_112"
+                                android:paddingLeft="@dimen/base_dimen_24"
+                                android:paddingRight="@dimen/base_dimen_24">
+
+                                <TextView
+                                    android:id="@+id/point_all_hint_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="@string/point_all_hint_2"
+                                    android:textColor="@color/text_color_20"
+                                    android:textSize="@dimen/base_dimen_30" />
+
+                                <TextView
+                                    android:id="@+id/point_all_hint"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_toEndOf="@+id/point_all_hint_2"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/text_color_20"
+                                    android:textSize="@dimen/base_dimen_30" />
+
+                                <TextView
+                                    android:id="@+id/point_all_hint_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_toEndOf="@+id/point_all_hint"
+                                    android:gravity="center"
+                                    android:text="@string/point_all_hint_1"
+                                    android:textColor="@color/text_color_20"
+                                    android:textSize="@dimen/base_dimen_30" />
+
+
+                                <TextView
+                                    android:id="@+id/point_hint_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_toStartOf="@+id/point_hint"
+                                    android:gravity="center"
+                                    android:text="@string/point_hint_2"
+                                    android:textColor="@color/text_color_20"
+                                    android:textSize="@dimen/base_dimen_30" />
+
+                                <TextView
+                                    android:id="@+id/point_hint"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_toStartOf="@+id/point_hint_1"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/text_color_20"
+                                    android:textSize="@dimen/base_dimen_30" />
+
+                                <TextView
+                                    android:id="@+id/point_hint_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentTop="true"
+                                    android:gravity="center"
+                                    android:text="@string/point_hint_1"
+                                    android:textColor="@color/text_color_20"
+                                    android:textSize="@dimen/base_dimen_30" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/patrol_path_head"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/base_dimen_88"
+                            android:background="@color/equipment_title_bg"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/base_dimen_24"
+                            android:paddingRight="@dimen/base_dimen_24">
+
+                            <TextView
+                                android:id="@+id/patrol_point_name"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="128"
+                                android:background="@color/equipment_bg_3"
+                                android:gravity="center"
+                                android:text="@string/patrol_point_name"
+                                android:textColor="@color/equipment_title_bg"
+                                android:textSize="@dimen/base_dimen_30" />
+
+                            <TextView
+                                android:id="@+id/patrol_point_time"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="109"
+                                android:background="@color/equipment_bg_3"
+                                android:gravity="center"
+                                android:text="@string/patrol_point_time"
+                                android:textColor="@color/equipment_title_bg"
+                                android:textSize="@dimen/base_dimen_30" />
+
+                            <TextView
+                                android:id="@+id/patrol_point_state"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="112"
+                                android:background="@color/equipment_bg_3"
+                                android:gravity="center"
+                                android:text="@string/patrol_point_state"
+                                android:textColor="@color/equipment_title_bg"
+                                android:textSize="@dimen/base_dimen_30" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/layout_title_bar_bg">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/base_dimen_1"
+                                android:layout_marginLeft="@dimen/base_dimen_24"
+                                android:layout_marginRight="@dimen/base_dimen_24"
+                                android:background="@color/equipment_text_18" />
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/layout_title_bar_bg"
+                            android:orientation="vertical">
+
+                            <com.jinke.housekeeper.saas.patrol.ui.widget.CustomListView
+                                android:id="@+id/patrol_path"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:clickable="false"
+                                android:divider="@null"
+                                android:listSelector="@android:color/transparent" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_104"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/base_dimen_192"
+                android:layout_marginLeft="@dimen/base_dimen_24"
+                android:layout_marginRight="@dimen/base_dimen_24"
+                android:background="@drawable/corners_blue_bg"
+                android:gravity="center"
+                android:text="@string/patrol_began"
+                android:textColor="@color/layout_title_bar_bg"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <RelativeLayout
+                android:id="@+id/sign_out_button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_128"
+                android:layout_alignParentBottom="true"
+                android:background="@color/card_background">
+
+                <TextView
+                    android:id="@+id/sign_out_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/base_dimen_12"
+                    android:layout_marginLeft="@dimen/base_dimen_24"
+                    android:layout_marginRight="@dimen/base_dimen_24"
+                    android:layout_marginTop="@dimen/base_dimen_12"
+                    android:background="@drawable/corners_blue_bg"
+                    android:gravity="center"
+                    android:text="@string/activity_patrol_sign_out"
+                    android:textColor="@color/layout_title_bar_bg"
+                    android:textSize="@dimen/base_dimen_30" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </com.jinke.housekeeper.saas.patrol.ui.widget.LoadingLayout>
+
+
+</FrameLayout>

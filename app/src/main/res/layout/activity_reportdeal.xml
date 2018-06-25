@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_backgroup"
+    android:orientation="vertical">
+
+    <com.jinke.housekeeper.saas.report.ui.widget.NavigationView
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_80"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:layout_marginTop="@dimen/base_dimen_9"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/toBeRectified"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_today_check_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="待处理"
+            android:textColor="@drawable/color_radiobutton" />
+
+        <RadioButton
+            android:id="@+id/hasRectified"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_today_uncheck_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="我的报事"
+            android:textColor="@drawable/color_radiobutton" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:layout_marginTop="@dimen/base_dimen_9"
+        android:background="@color/line" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

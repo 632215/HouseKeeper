@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/base_dimen_100"
+    android:background="@color/layout_title_bar_bg"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBaseline="@+id/button_backward"
+        android:layout_alignBottom="@+id/button_backward"
+        android:layout_alignParentStart="true"
+        android:ellipsize="marquee"
+        android:gravity="center_horizontal|center"
+        android:singleLine="true"
+        android:textColor="@color/layout_title_bar_text_bg"
+        android:textSize="@dimen/base_dimen_36" />
+
+    <TextView
+        android:id="@+id/button_backward"
+        android:layout_width="@dimen/base_dimen_220"
+        android:layout_height="match_parent"
+        android:drawableLeft="@drawable/back_image"
+        android:drawablePadding="@dimen/base_dimen_6"
+        android:gravity="center"
+        android:paddingLeft="@dimen/base_dimen_24"
+        android:singleLine="true"
+        android:textColor="@color/layout_title_bar_text_bg"
+        android:textSize="@dimen/base_dimen_28"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/button_forward"
+        android:layout_width="@dimen/base_dimen_220"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:drawablePadding="@dimen/base_dimen_6"
+        android:gravity="right|center_vertical"
+        android:paddingRight="@dimen/base_dimen_24"
+        android:singleLine="true"
+        android:textColor="@color/layout_title_bar_text_bg"
+        android:textSize="@dimen/base_dimen_28"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/layout_title_bar_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/layout_title_bar_line" />
+
+</RelativeLayout>

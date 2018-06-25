@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jinke.housekeeper.saas.handoverroom.ui.activity.BeganHandoverRoomActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:id="@+id/began_handover_room_scanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <com.jinke.housekeeper.saas.handoverroom.ui.widget.zxing.view.ViewfinderView
+            android:id="@+id/began_handover_room_viewfinder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:corner_color="@color/corner_color"
+            app:frame_color="@color/viewfinder_frame"
+            app:label_text_color="@color/colorAccent"
+            app:laser_color="@color/laser_color"
+            app:mask_color="@color/viewfinder_mask"
+            app:result_color="@color/result_view"
+            app:result_point_color="@color/result_point_color" />
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/began_handover_room_layout"
+        android:background="@drawable/began_handover_room_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/base_dimen_320">
+
+        <RelativeLayout
+            android:id="@+id/handover_room_project_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_6">
+
+            <TextView
+                android:id="@+id/handover_room_project_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/handover_room_project"
+                android:textColor="@color/layout_title_bar_text_bg"
+                android:textSize="@dimen/base_dimen_32" />
+
+            <TextView
+                android:id="@+id/handover_room_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/handover_room_project_text"
+                android:textColor="@color/layout_title_bar_text_bg"
+                android:text="请扫描二维码"
+                android:textSize="@dimen/base_dimen_32" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/handover_room_sequence_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/handover_room_project_layout"
+            android:layout_marginTop="@dimen/base_dimen_6">
+
+            <TextView
+                android:id="@+id/handover_room_sequence_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/handover_room_sequence"
+                android:textColor="@color/layout_title_bar_text_bg"
+                android:textSize="@dimen/base_dimen_32" />
+
+            <TextView
+                android:id="@+id/handover_room_sequence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/handover_room_sequence_text"
+                android:textColor="@color/layout_title_bar_text_bg"
+                android:text="请扫描二维码"
+                android:textSize="@dimen/base_dimen_32" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/began_handover_room_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingTop="@dimen/base_dimen_16"
+        android:paddingBottom="@dimen/base_dimen_16">
+
+        <TextView
+            android:id="@+id/began_handover_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_28"
+            android:layout_marginRight="@dimen/base_dimen_28"
+            android:background="@color/equipment_bg_3"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_dimen_28"
+            android:paddingTop="@dimen/base_dimen_28"
+            android:text="@string/began_handover_room"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_32" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

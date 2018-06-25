@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="200"
+            android:background="@color/equipment_bg_4"
+            android:paddingBottom="@dimen/base_dimen_10"
+            android:paddingTop="@dimen/base_dimen_10"
+            android:paddingLeft="@dimen/base_dimen_18">
+
+            <LinearLayout
+                android:id="@+id/layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_56"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/read_meter_info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_meter_info_engine_stress_b"
+                    android:textColor="@color/equipment_text_15"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/read_meter_info_value"
+                        android:layout_width="@dimen/base_dimen_186"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/base_dimen_14"
+                        android:inputType="numberDecimal"
+                        android:background="@color/equipment_title_bg"
+                        android:textColor="@color/equipment_text_8"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="154"
+            android:background="@color/equipment_bg_1"
+            android:paddingBottom="@dimen/base_dimen_10"
+            android:paddingTop="@dimen/base_dimen_10"
+            android:paddingRight="@dimen/base_dimen_20">
+
+            <LinearLayout
+                android:id="@+id/yesterday_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_56"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/base_dimen_8"
+                    android:gravity="center_vertical"
+                    android:text="@string/read_meter_info_mete_yesterday"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <TextView
+                        android:id="@+id/read_meter_info_value_yesterday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/base_dimen_14"
+                        android:gravity="center_vertical"
+                        android:text="5648立方"
+                        android:textColor="@color/equipment_text_9"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

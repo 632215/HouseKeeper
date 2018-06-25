@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/activity_main_default_bg_color"
+    android:paddingTop="@dimen/base_dimen_24">
+
+    <LinearLayout
+        android:id="@+id/item_people_review_layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/base_dimen_28">
+
+        <TextView
+            android:id="@+id/item_people_review_text_name"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fragment_user_name"
+            android:textColor="@color/fragment_user_text_color1"
+            android:textSize="@dimen/base_dimen_32" />
+
+        <TextView
+            android:id="@+id/item_people_review_text_project"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/fragment_user_project"
+            android:textColor="@color/fragment_user_text_color1"
+            android:textSize="@dimen/base_dimen_32" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/item_people_review_layout_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_people_review_layout_name"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/base_dimen_28"
+        android:paddingLeft="@dimen/base_dimen_28"
+        android:paddingRight="@dimen/base_dimen_28">
+
+        <TextView
+            android:id="@+id/item_people_review_text_department"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fragment_user_post"
+            android:textColor="@color/fragment_user_text_color1"
+            android:textSize="@dimen/base_dimen_32" />
+
+        <TextView
+            android:id="@+id/item_people_review_text_phone"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/fragment_user_phones"
+            android:textColor="@color/fragment_user_text_color1"
+            android:textSize="@dimen/base_dimen_32" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_people_review_layout_department"
+        android:background="@drawable/shape_fragment_msg_top_parting_line_1dp">
+
+        <ImageView
+            android:id="@+id/item_people_review_image_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingRight="@dimen/base_dimen_24"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:src="@drawable/item_people_review_pass" />
+
+        <ImageView
+            android:id="@+id/item_people_review_image_reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/item_people_review_image_pass"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingRight="@dimen/base_dimen_24"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:src="@drawable/item_people_review_reject" />
+    </RelativeLayout>
+</RelativeLayout>

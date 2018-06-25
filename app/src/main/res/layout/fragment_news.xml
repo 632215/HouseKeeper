@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<www.jinke.com.library.pulltorefresh.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_main_default_bg_color"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.jinke.housekeeper.saas.report.ui.fragment.activitynews.NewsFragment">
+
+    <com.jinke.housekeeper.ui.widget.LoadingLayout
+        android:id="@+id/news_load_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:isFirstVisible="true">
+
+        <com.jinke.housekeeper.saas.report.ui.widget.FillListView
+            android:id="@+id/news_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/base_dimen_24"
+            android:divider="@null"
+            android:dividerHeight="@dimen/base_dimen_20" />
+    </com.jinke.housekeeper.ui.widget.LoadingLayout>
+
+</www.jinke.com.library.pulltorefresh.PullToRefreshScrollView>

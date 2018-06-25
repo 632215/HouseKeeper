@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical">
+
+    <com.jinke.housekeeper.ui.widget.LoadingLayout
+        android:id="@+id/loadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:isFirstVisible="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_0"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/base_dimen_20">
+
+                <RelativeLayout
+                    android:id="@+id/st_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_96"
+                    android:layout_alignParentTop="true"
+                    android:background="#f5f5f7">
+
+                    <TextView
+                        android:id="@+id/tx_bluerectangle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/base_dimen_30"
+                        android:drawableLeft="@drawable/greay"
+                        android:drawablePadding="@dimen/base_dimen_6"
+                        android:gravity="center"
+                        android:text="任务"
+                        android:textColor="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/tx_finishrectangle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tx_bluerectangle"
+                        android:layout_marginRight="@dimen/base_dimen_10"
+                        android:layout_toLeftOf="@+id/tx_bluerectangle"
+                        android:drawableLeft="@drawable/blue"
+                        android:drawablePadding="@dimen/base_dimen_6"
+                        android:gravity="center"
+                        android:text="完成"
+                        android:textColor="@color/gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:text="发起检查（部门）"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/base_dimen_30" />
+
+                </RelativeLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rec_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/st_view"
+                    android:paddingLeft="@dimen/base_dimen_20" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_0"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/in_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_96"
+                    android:layout_alignParentTop="true"
+                    android:background="#f5f5f7">
+
+                    <TextView
+                        android:id="@+id/tx_leirectangle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/base_dimen_30"
+                        android:drawableLeft="@drawable/greay"
+                        android:drawablePadding="@dimen/base_dimen_6"
+                        android:gravity="center"
+                        android:text="累计"
+                        android:textColor="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/tx_finish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tx_leirectangle"
+                        android:layout_marginRight="@dimen/base_dimen_10"
+                        android:layout_toLeftOf="@+id/tx_leirectangle"
+                        android:drawableLeft="@drawable/green"
+                        android:drawablePadding="@dimen/base_dimen_6"
+                        android:gravity="center"
+                        android:text="完成"
+                        android:textColor="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/in_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:maxEms="10"
+                        android:singleLine="true"
+                        android:text="巡查问题（李三）"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/base_dimen_30" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rec_project"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/in_view"
+                    android:paddingLeft="@dimen/base_dimen_20" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.jinke.housekeeper.ui.widget.LoadingLayout>
+</LinearLayout>

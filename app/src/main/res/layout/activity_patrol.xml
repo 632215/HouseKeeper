@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_patrol"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_title_bar_bg"
+    tools:context="com.jinke.housekeeper.saas.patrol.ui.activity.PatrolActivity">
+
+    <LinearLayout
+        android:id="@+id/patrol_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_24"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/base_dimen_220"
+            android:layout_margin="@dimen/base_dimen_12"
+            android:layout_weight="1"
+            android:background="@color/layout_title_bar_line_3"
+            android:padding="@dimen/base_dimen_1">
+
+            <TextView
+                android:id="@+id/patrol_began"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/layout_title_bar_bg"
+                android:drawablePadding="@dimen/base_dimen_40"
+                android:drawableTop="@drawable/patrol_began_ico"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:text="@string/patrol_began"
+                android:textColor="@color/text_color_11"
+                android:textSize="@dimen/base_dimen_32" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/base_dimen_220"
+            android:layout_margin="@dimen/base_dimen_12"
+            android:layout_weight="1"
+            android:background="@color/layout_title_bar_line_3"
+            android:padding="@dimen/base_dimen_1">
+
+            <TextView
+                android:id="@+id/patrol_location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/layout_title_bar_bg"
+                android:drawablePadding="@dimen/base_dimen_40"
+                android:drawableTop="@drawable/patrol_location_ico"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:text="@string/patrol_location"
+                android:textColor="@color/text_color_11"
+                android:textSize="@dimen/base_dimen_32" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/base_dimen_220"
+            android:layout_margin="@dimen/base_dimen_12"
+            android:layout_weight="1"
+            android:background="@color/layout_title_bar_line_3"
+            android:padding="@dimen/base_dimen_1">
+
+            <TextView
+                android:id="@+id/patrol_remind"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/layout_title_bar_bg"
+                android:drawablePadding="@dimen/base_dimen_40"
+                android:drawableTop="@drawable/patrol_remind_ico"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:text="@string/patrol_remind"
+                android:textColor="@color/text_color_11"
+                android:textSize="@dimen/base_dimen_32" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/patrol_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/base_dimen_220"
+            android:layout_margin="@dimen/base_dimen_12"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@color/layout_title_bar_line_3"
+            android:padding="@dimen/base_dimen_1">
+
+            <TextView
+                android:id="@+id/patrol_statement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/layout_title_bar_bg"
+                android:drawablePadding="@dimen/base_dimen_40"
+                android:drawableTop="@drawable/patrol_began_ico"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:text="@string/patrol_statement"
+
+                android:textColor="@color/text_color_11"
+                android:textSize="@dimen/base_dimen_32" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/base_dimen_220"
+            android:layout_margin="@dimen/base_dimen_12"
+            android:layout_weight="1"
+            android:background="@color/layout_title_bar_bg"
+            android:padding="@dimen/base_dimen_1"/>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/base_dimen_220"
+            android:layout_margin="@dimen/base_dimen_12"
+            android:layout_weight="1"
+            android:background="@color/layout_title_bar_bg"
+            android:padding="@dimen/base_dimen_1"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

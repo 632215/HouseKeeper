@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grab_single_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_customtitleview"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:drawableLeft="@drawable/icon_work_bench_back"
+            android:padding="@dimen/base_dimen_12"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_grab_single_grab_work"
+            android:textColor="@color/work_bench_tx_black"
+            android:textSize="@dimen/base_dimen_36" />
+
+        <TextView
+            android:id="@+id/tv_work_order_deal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="巡检处理"
+            android:textColor="@color/work_bench_tx_theme" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/grab_single_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_80"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/grab_single_type_all"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/grab_single_type_all"
+            android:textColor="@drawable/select_group_text" />
+
+
+        <RadioButton
+            android:id="@+id/grab_single_type_service"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/work_order_owner_report"
+            android:textColor="@drawable/select_group_text" />
+
+
+        <RadioButton
+            android:id="@+id/grab_single_type_project"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_dimen_20"
+            android:paddingTop="@dimen/base_dimen_20"
+            android:text="@string/work_order_internal_reporting"
+            android:textColor="@drawable/select_group_text" />
+
+
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/grab_single_view_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/base_dimen_1" />
+
+</LinearLayout>

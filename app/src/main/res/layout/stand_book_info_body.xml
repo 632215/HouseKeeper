@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RadioGroup
+        android:id="@+id/stand_book_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_88"
+        android:layout_marginLeft="@dimen/base_dimen_24"
+        android:layout_marginRight="@dimen/base_dimen_24"
+        android:layout_marginTop="@dimen/base_dimen_28"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/stand_book_base_info"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_group_lift"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/stand_book_base_info"
+            android:checked="true"
+            android:textColor="@drawable/stand_book_radio_button" />
+
+        <RadioButton
+            android:id="@+id/stand_book_inspect_project"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_group_middle"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/stand_book_inspect_project"
+            android:textColor="@drawable/stand_book_radio_button" />
+
+        <RadioButton
+            android:id="@+id/stand_book_maintenance_project"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_today_right"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/stand_book_maintenance_project"
+            android:textColor="@drawable/stand_book_radio_button" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/stand_book_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/stand_book_radio_group"
+        android:layout_marginLeft="@dimen/base_dimen_20"
+        android:layout_marginRight="@dimen/base_dimen_20"
+        android:layout_marginTop="@dimen/base_dimen_50" />
+
+</RelativeLayout>

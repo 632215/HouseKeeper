@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/patrol_remind_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/layout_title_bar_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/patrol_manage_empty_hint"
+        android:textColor="@color/layout_title_bar_text_bg"
+        android:textSize="@dimen/base_dimen_34" />
+
+    <TextView
+        android:id="@+id/layout_title_bar_bg_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title_bar_bg"
+        android:layout_marginTop="@dimen/base_dimen_6"
+        android:layout_centerInParent="true"
+        android:text="@string/patrol_manage_empty_hint_1"
+        android:textColor="@color/layout_title_bar_text_bg"
+        android:textSize="@dimen/base_dimen_34" />
+
+
+    <RelativeLayout
+        android:id="@+id/patrol_manage_add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title_bar_bg_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_40"
+        android:background="@drawable/corners_gray_bg"
+        android:padding="@dimen/base_dimen_2">
+
+        <TextView
+            android:id="@+id/patrol_add"
+            android:layout_width="@dimen/base_dimen_220"
+            android:layout_height="@dimen/base_dimen_66"
+            android:background="@drawable/corners_bg_01"
+            android:gravity="center"
+            android:text="@string/patrol_manage_add"
+            android:textColor="@color/layout_title_bar_text_bg"
+            android:textSize="@dimen/base_dimen_34" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

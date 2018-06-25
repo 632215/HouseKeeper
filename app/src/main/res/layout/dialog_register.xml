@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/base_dimen_520"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_register_dialog">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_register_dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_80"
+                android:gravity="center"
+                android:text="@string/register_successed"
+                android:textColor="@color/register_text_deepblack"
+                android:textSize="@dimen/base_dimen_32" />
+
+            <TextView
+                android:id="@+id/tv_register_dialog_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_200"
+                android:gravity="center"
+                android:padding="@dimen/base_dimen_60"
+                android:text="@string/register_successed_tips"
+                android:textColor="@color/register_text_black"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:background="@color/dialog"></View>
+
+            <TextView
+                android:id="@+id/tv_register_dialog_know"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:layout_marginLeft="@dimen/base_dimen_2"
+                android:layout_marginRight="@dimen/base_dimen_2"
+                android:layout_marginBottom="@dimen/base_dimen_2"
+                android:paddingTop="@dimen/base_dimen_20"
+                android:text="@string/I_know"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/frame_blue"
+                android:textSize="@dimen/base_dimen_32" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

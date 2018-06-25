@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/equipment_bg"
+    android:orientation="vertical"
+    tools:context="com.jinke.housekeeper.saas.equipment.ui.activity.DailyPatrolActivity">
+
+    <RelativeLayout
+        android:id="@+id/daily_patrol_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/base_dimen_70"
+        android:paddingLeft="@dimen/base_dimen_36">
+
+        <TextView
+            android:id="@+id/daily_patrol_my_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_24"
+            android:layout_marginTop="@dimen/base_dimen_28"
+            android:background="@color/equipment_title_bg"
+            android:paddingBottom="@dimen/base_dimen_6"
+            android:paddingLeft="@dimen/base_dimen_24"
+            android:paddingRight="@dimen/base_dimen_24"
+            android:paddingTop="@dimen/base_dimen_6"
+            android:text="@string/daily_patrol_my_task"
+            android:textColor="@color/equipment_text_2"
+            android:textSize="@dimen/base_dimen_34" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_236"
+            android:layout_below="@+id/daily_patrol_my_task"
+            android:layout_marginLeft="@dimen/base_dimen_24"
+            android:layout_marginRight="@dimen/base_dimen_24"
+            android:layout_marginTop="@dimen/base_dimen_60">
+
+            <TextView
+                android:id="@+id/equipment_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_8"
+                android:background="@drawable/equipment_progress_ico"
+                android:gravity="center"
+                android:lines="1"
+                android:text="0%"
+                android:textColor="@color/equipment_text_5"
+                android:textSize="@dimen/base_dimen_40" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/equipment_progress"
+                android:layout_marginTop="@dimen/base_dimen_24"
+                android:text="@string/daily_patrol_percentage_complete"
+                android:textColor="@color/equipment_text_8"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:id="@+id/daily_patrol_line"
+                android:layout_width="@dimen/base_dimen_1"
+                android:layout_height="@dimen/base_dimen_220"
+                android:layout_marginBottom="@dimen/base_dimen_8"
+                android:layout_marginLeft="@dimen/base_dimen_68"
+                android:layout_marginTop="@dimen/base_dimen_8"
+                android:layout_toRightOf="@+id/equipment_progress"
+                android:background="@color/equipment_line_1" />
+
+            <RelativeLayout
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/base_dimen_76"
+                android:layout_toRightOf="@+id/daily_patrol_line">
+
+                <TextView
+                    android:id="@+id/daily_patrol_complete_time_rate_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/daily_patrol_complete_time_rate"
+                    android:textColor="@color/equipment_text_7"
+                    android:textSize="@dimen/base_dimen_26" />
+
+                <TextView
+                    android:id="@+id/daily_patrol_timeout_task_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/daily_patrol_timeout_task"
+                    android:textColor="@color/equipment_text_7"
+                    android:textSize="@dimen/base_dimen_26" />
+
+
+                <TextView
+                    android:id="@+id/daily_patrol_action_required_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/daily_patrol_action_required"
+                    android:textColor="@color/equipment_text_7"
+                    android:textSize="@dimen/base_dimen_26" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/base_dimen_68"
+                android:layout_toRightOf="@+id/text_title">
+
+                <TextView
+                    android:id="@+id/daily_patrol_complete_time_rate"
+                    android:layout_width="@dimen/base_dimen_120"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="0"
+                    android:lines="1"
+                    android:textColor="@color/equipment_text_6"
+                    android:textSize="@dimen/base_dimen_38" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/daily_patrol_complete_time_rate"
+                    android:layout_toRightOf="@+id/daily_patrol_complete_time_rate"
+                    android:text="%"
+                    android:textColor="@color/equipment_text_6"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:id="@+id/daily_patrol_timeout_task"
+                    android:layout_width="@dimen/base_dimen_120"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:lines="1"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textColor="@color/equipment_text_4"
+                    android:textSize="@dimen/base_dimen_38" />
+
+
+                <TextView
+                    android:id="@+id/daily_patrol_action_required"
+                    android:layout_width="@dimen/base_dimen_120"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="right"
+                    android:text="0"
+                    android:lines="1"
+                    android:textColor="@color/equipment_text_4"
+                    android:textSize="@dimen/base_dimen_38" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/base_dimen_28"
+        android:background="@color/equipment_title_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/base_dimen_24">
+
+            <com.jinke.housekeeper.saas.equipment.ui.widget.CustomListView
+                android:id="@+id/daily_patrol_record"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:divider="@null"
+                android:dividerHeight="@dimen/base_dimen_2"
+                android:listSelector="@android:color/transparent" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/equipment_title_bg"
+        android:paddingBottom="@dimen/base_dimen_16"
+        android:paddingTop="@dimen/base_dimen_16">
+
+        <TextView
+            android:id="@+id/daily_patrol_scan_start_task_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/equipment_two_button"
+            android:gravity="center"
+            android:text="@string/daily_patrol_scan_start_task"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_32" />
+
+    </RelativeLayout>
+
+</LinearLayout>

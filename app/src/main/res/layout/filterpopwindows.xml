@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jinke.housekeeper.saas.report.ui.widget.MyScrollView
+                android:id="@+id/myScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+
+                <LinearLayout
+                    android:id="@+id/searchCondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/timeRange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/base_dimen_60"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/base_dimen_20"
+                        android:text="自检时段"
+                        android:textColor="@color/black_de"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <LinearLayout
+                        android:id="@+id/timeRangeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/base_dimen_20"
+                        android:paddingTop="@dimen/base_dimen_10">
+
+                        <TextView
+                            android:id="@+id/pu_startTime"
+                            android:layout_width="@dimen/base_dimen_0"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/base_dimen_20"
+                            android:layout_marginRight="@dimen/base_dimen_10"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_item_pink_bg"
+                            android:drawablePadding="@dimen/base_dimen_4"
+                            android:drawableRight="@drawable/calendar"
+                            android:gravity="center|left"
+                            android:paddingBottom="@dimen/base_dimen_15"
+                            android:paddingLeft="@dimen/base_dimen_15"
+                            android:paddingRight="@dimen/base_dimen_30"
+                            android:paddingTop="@dimen/base_dimen_15"
+                            android:text="" />
+
+
+                        <TextView
+                            android:id="@+id/pu_endTime"
+                            android:layout_width="@dimen/base_dimen_0"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/base_dimen_10"
+                            android:layout_marginRight="@dimen/base_dimen_20"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_item_pink_bg"
+                            android:drawablePadding="@dimen/base_dimen_4"
+                            android:drawableRight="@drawable/calendar"
+                            android:gravity="center|left"
+                            android:paddingBottom="@dimen/base_dimen_15"
+                            android:paddingLeft="@dimen/base_dimen_15"
+                            android:paddingRight="@dimen/base_dimen_30"
+                            android:paddingTop="@dimen/base_dimen_15"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/peopleLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/base_dimen_1"
+                            android:background="@color/line" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/base_dimen_60"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/base_dimen_20"
+                            android:text="人员搜索"
+                            android:textColor="@color/black" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/base_dimen_20"
+                            android:paddingTop="@dimen/base_dimen_10">
+
+                            <EditText
+                                android:id="@+id/sponsor"
+                                android:layout_width="@dimen/base_dimen_0"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/base_dimen_20"
+                                android:layout_marginRight="@dimen/base_dimen_10"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_item_pink_bg"
+                                android:drawablePadding="@dimen/base_dimen_4"
+                                android:drawableRight="@drawable/man"
+                                android:gravity="center|left"
+                                android:hint="发起人"
+                                android:imeOptions="actionSearch"
+                                android:inputType="text"
+                                android:paddingBottom="@dimen/base_dimen_15"
+                                android:paddingLeft="@dimen/base_dimen_15"
+                                android:paddingRight="@dimen/base_dimen_30"
+                                android:paddingTop="@dimen/base_dimen_15"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColorHint="@color/man"
+                                android:textSize="@dimen/base_dimen_28" />
+
+                            <EditText
+                                android:id="@+id/rectificationMan"
+                                android:layout_width="@dimen/base_dimen_0"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/base_dimen_10"
+                                android:layout_marginRight="@dimen/base_dimen_20"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_item_pink_bg"
+                                android:drawablePadding="@dimen/base_dimen_4"
+                                android:drawableRight="@drawable/man"
+                                android:gravity="center|left"
+                                android:hint="整改人"
+                                android:imeOptions="actionSearch"
+                                android:inputType="text"
+                                android:paddingBottom="@dimen/base_dimen_15"
+                                android:paddingLeft="@dimen/base_dimen_15"
+                                android:paddingRight="@dimen/base_dimen_30"
+                                android:paddingTop="@dimen/base_dimen_15"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColorHint="@color/man"
+                                android:textSize="@dimen/base_dimen_28" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/base_dimen_1"
+                            android:background="@color/line" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/categoryLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/base_dimen_60"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/base_dimen_20"
+                            android:text="所属类别"
+                            android:textColor="@color/black" />
+
+                        <com.jinke.housekeeper.saas.report.ui.widget.MyGridView
+                            android:id="@+id/category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/base_dimen_10"
+                            android:horizontalSpacing="@dimen/base_dimen_20"
+                            android:numColumns="4"
+                            android:paddingBottom="@dimen/base_dimen_20"
+                            android:paddingLeft="@dimen/base_dimen_20"
+                            android:paddingRight="@dimen/base_dimen_20"
+                            android:scrollbars="vertical"
+                            android:verticalSpacing="@dimen/base_dimen_20" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/base_dimen_1"
+                            android:background="@color/line" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/stateLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/base_dimen_60"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/base_dimen_20"
+                            android:text="完成状态"
+                            android:textColor="@color/black"
+                            android:visibility="gone" />
+
+                        <com.jinke.housekeeper.saas.report.ui.widget.MyGridView
+                            android:id="@+id/state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/base_dimen_10"
+                            android:horizontalSpacing="@dimen/base_dimen_20"
+                            android:numColumns="4"
+                            android:paddingBottom="@dimen/base_dimen_20"
+                            android:paddingLeft="@dimen/base_dimen_20"
+                            android:paddingRight="@dimen/base_dimen_20"
+                            android:scrollbars="vertical"
+                            android:verticalSpacing="@dimen/base_dimen_20" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/base_dimen_1"
+                            android:background="@color/line" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/keyPoitLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/base_dimen_60"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/base_dimen_20"
+                            android:text="关键点位"
+                            android:textColor="@color/black_de"
+                            android:textSize="@dimen/base_dimen_28" />
+
+                        <com.jinke.housekeeper.saas.report.ui.widget.MyGridView
+                            android:id="@+id/keyPointList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/base_dimen_10"
+                            android:horizontalSpacing="@dimen/base_dimen_20"
+                            android:numColumns="4"
+                            android:paddingBottom="@dimen/base_dimen_20"
+                            android:paddingLeft="@dimen/base_dimen_20"
+                            android:paddingRight="@dimen/base_dimen_20"
+                            android:scrollbars="vertical"
+                            android:verticalSpacing="@dimen/base_dimen_20" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/base_dimen_1"
+                            android:background="@color/line" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.jinke.housekeeper.saas.report.ui.widget.MyScrollView>
+
+            <RelativeLayout
+                android:id="@+id/btnLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myScrollView"
+                android:background="#f5f5f7"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingLeft="@dimen/base_dimen_20"
+                android:paddingRight="@dimen/base_dimen_20"
+                android:paddingTop="@dimen/base_dimen_20">
+
+                <TextView
+                    android:id="@+id/tx_Reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:background="@drawable/shape_item_pink_bg"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/base_dimen_15"
+                    android:paddingLeft="@dimen/base_dimen_60"
+                    android:paddingRight="@dimen/base_dimen_60"
+                    android:paddingTop="@dimen/base_dimen_15"
+                    android:text="重置"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:id="@+id/complish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_login_button_background"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/base_dimen_15"
+                    android:paddingLeft="@dimen/base_dimen_60"
+                    android:paddingRight="@dimen/base_dimen_60"
+                    android:paddingTop="@dimen/base_dimen_15"
+                    android:text="完成"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/base_dimen_28" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/scrollview"
+        android:background="#e0000000" />
+</RelativeLayout>

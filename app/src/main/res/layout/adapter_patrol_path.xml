@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/base_dimen_93">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/patrol_path_line_1"-->
+    <!--android:layout_width="@dimen/base_dimen_2"-->
+    <!--android:layout_height="@dimen/base_dimen_47"-->
+    <!--android:layout_marginLeft="@dimen/base_dimen_42"-->
+    <!--android:background="@color/layout_line" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/patrol_path_line_2"-->
+    <!--android:layout_width="@dimen/base_dimen_2"-->
+    <!--android:layout_height="@dimen/base_dimen_47"-->
+    <!--android:layout_below="@+id/patrol_path_line_1"-->
+    <!--android:layout_marginLeft="@dimen/base_dimen_42"-->
+    <!--android:background="@color/layout_line" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/patrol_path_point_2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/base_dimen_30"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@drawable/patrol_path_point_on" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/patrol_path_point"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="@dimen/base_dimen_33"-->
+    <!--android:background="@drawable/patrol_path_point_off"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/patrol_path_time"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="@dimen/base_dimen_62"-->
+    <!--android:layout_toEndOf="@+id/patrol_path_point"-->
+    <!--android:text="09:25"-->
+    <!--android:textColor="@color/text_color_5"-->
+    <!--android:textSize="@dimen/base_dimen_30" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/patrol_path_location"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="@dimen/base_dimen_62"-->
+    <!--android:layout_toEndOf="@+id/patrol_path_time"-->
+    <!--android:text="1栋大厅"-->
+    <!--android:textColor="@color/text_color_5"-->
+    <!--android:textSize="@dimen/base_dimen_30" />-->
+
+    <!--</RelativeLayout>-->
+
+    <LinearLayout
+        android:id="@+id/patrol_path_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_88"
+        android:background="@color/equipment_title_bg"
+        android:paddingLeft="@dimen/base_dimen_24"
+        android:paddingRight="@dimen/base_dimen_24">
+
+        <RelativeLayout
+            android:id="@+id/patrol_point_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/equipment_bg_4"
+            android:layout_weight="128">
+
+            <TextView
+                android:layout_width="@dimen/base_dimen_1"
+                android:layout_height="match_parent"
+                android:background="@color/equipment_text_18" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:scrollbars="none">
+
+                <TextView
+                    android:id="@+id/patrol_path_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/equipment_text_7"
+                    android:textSize="@dimen/base_dimen_30" />
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/patrol_path_ens_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:background="@color/equipment_text_18"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/patrol_point_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="109">
+
+            <TextView
+                android:layout_width="@dimen/base_dimen_1"
+                android:layout_height="match_parent"
+                android:background="@color/equipment_text_18" />
+
+            <TextView
+                android:id="@+id/patrol_path_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/equipment_text_7"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:background="@color/equipment_text_18"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/patrol_point_state"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="112">
+
+            <TextView
+                android:layout_width="@dimen/base_dimen_1"
+                android:layout_height="match_parent"
+                android:background="@color/equipment_text_18" />
+
+            <TextView
+                android:id="@+id/patrol_path_state"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/equipment_text_7"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:layout_width="@dimen/base_dimen_1"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/equipment_text_18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:background="@color/equipment_text_18"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/base_dimen_1"-->
+        <!--android:background="@color/equipment_text_18"-->
+        <!--android:layout_marginLeft="@dimen/base_dimen_24"-->
+        <!--android:layout_marginRight="@dimen/base_dimen_24" />-->
+
+</LinearLayout>

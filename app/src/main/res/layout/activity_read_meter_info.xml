@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/equipment_bg"
+    android:orientation="vertical"
+    tools:context="com.jinke.housekeeper.saas.equipment.ui.activity.CheckingInformationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/base_dimen_20"
+        android:layout_marginTop="@dimen/base_dimen_28"
+        android:background="@color/equipment_title_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/base_dimen_12"
+        android:paddingLeft="@dimen/base_dimen_24">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/read_meter_info_meter_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_dimen_38"
+                android:layout_marginTop="@dimen/base_dimen_28"
+                android:text="@string/read_meter_info_meter_time"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/read_meter_info_meter_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_dimen_38"
+                android:layout_marginLeft="@dimen/base_dimen_16"
+                android:layout_marginTop="@dimen/base_dimen_28"
+                android:layout_toRightOf="@+id/read_meter_info_meter_time_text"
+                android:textSize="@dimen/base_dimen_28" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_16"
+            android:background="@color/equipment_bg_3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_40"
+            android:text="@string/read_meter_info_meter_site"
+            android:textColor="@color/equipment_text_10"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <TextView
+            android:id="@+id/read_meter_info_meter_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_6"
+            android:textColor="@color/equipment_text_6"
+            android:textSize="@dimen/base_dimen_30"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_marginTop="@dimen/base_dimen_24"
+            android:background="@color/equipment_text_6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_24"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:text="@string/read_meter_info_meter_today"
+            android:textColor="@color/equipment_text_6"
+            android:textSize="@dimen/base_dimen_30" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/equipment_title_bg"
+        android:paddingLeft="@dimen/base_dimen_24"
+        android:paddingRight="@dimen/base_dimen_16">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/equipment_bg_1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="200"
+                    android:background="@color/equipment_bg_4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="154" />
+
+            </LinearLayout>
+
+            <com.jinke.housekeeper.saas.equipment.ui.widget.CustomListView
+                android:id="@+id/read_meter_info_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/base_dimen_16"
+                android:layout_marginTop="@dimen/base_dimen_12"
+                android:background="@null"
+                android:divider="@null" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/equipment_title_bg"
+        android:paddingBottom="@dimen/base_dimen_16"
+        android:paddingTop="@dimen/base_dimen_16">
+
+        <TextView
+            android:id="@+id/read_meter_info_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/base_dimen_24"
+            android:layout_marginRight="@dimen/base_dimen_11"
+            android:layout_weight="1"
+            android:background="@drawable/equipment_two_button"
+            android:gravity="center"
+            android:text="@string/read_meter_info_cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <TextView
+            android:id="@+id/read_meter_info_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/base_dimen_11"
+            android:layout_marginRight="@dimen/base_dimen_24"
+            android:layout_weight="1"
+            android:background="@drawable/equipment_two_button"
+            android:gravity="center"
+            android:text="@string/read_meter_info_submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_30" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_backgroup"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/displayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:visibility="gone">
+
+        <com.bm.library.PhotoView
+            android:id="@+id/enlarge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <com.jinke.housekeeper.saas.report.ui.widget.NavigationView
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/base_dimen_30"
+                android:text="回访人"
+                android:textColor="@color/register_text_black"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/dealpeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingLeft="@dimen/base_dimen_200"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:text=""
+                android:textColor="@color/register_edit_gray"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/callPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:background="@drawable/shape_red_bg"
+                android:drawableLeft="@drawable/teliphone"
+                android:drawablePadding="@dimen/base_dimen_10"
+                android:padding="@dimen/base_dimen_10"
+                android:text="拨打电话"
+                android:textColor="@color/A106"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:layout_alignBottom="@+id/dealpeople"
+                android:layout_marginLeft="@dimen/base_dimen_30"
+                android:background="@color/dialog" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/base_dimen_30"
+                android:text="回访时间　"
+                android:textColor="@color/register_text_black"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/tv_checkdetails_Signed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingLeft="@dimen/base_dimen_200"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:text=""
+                android:textColor="@color/register_edit_gray"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:layout_alignBottom="@+id/tv_checkdetails_Signed"
+                android:layout_marginLeft="@dimen/base_dimen_30"
+                android:background="@color/dialog" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/endLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_work_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/base_dimen_30"
+                android:text="满意度"
+                android:textColor="@color/register_text_black"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/tv_checkdetails_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingLeft="@dimen/base_dimen_200"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:text=""
+                android:textColor="@color/register_edit_gray"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:layout_alignBottom="@+id/tv_checkdetails_end"
+                android:layout_marginLeft="@dimen/base_dimen_30"
+                android:background="@color/dialog" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_delay_progress_tx_problems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/base_dimen_30"
+                android:text="回访描述"
+                android:textColor="@color/register_text_black"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <LinearLayout
+                android:id="@+id/activity_delay_progress_ll_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_25"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:layout_marginTop="@dimen/base_dimen_30"
+                android:layout_marginBottom="@dimen/base_dimen_20"
+                android:layout_toRightOf="@+id/activity_delay_progress_tx_problems"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_checkdetails_problem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/base_dimen_28"
+                    android:layout_marginBottom="@dimen/base_dimen_20"
+                    android:textColor="@color/register_edit_gray"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/voiceLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/base_dimen_20"
+                    android:layout_marginRight="@dimen/base_dimen_200"
+                    android:background="@drawable/shape_login_button_background"
+                    android:visibility="gone">
+
+                    <View
+                        android:id="@+id/voiceAnim"
+                        android:layout_width="@dimen/base_dimen_40"
+                        android:layout_height="@dimen/base_dimen_40"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/base_dimen_10"
+                        android:background="@drawable/v_anim3" />
+
+                    <TextView
+                        android:id="@+id/voiceTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/base_dimen_20"
+                        android:text="″"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/base_dimen_28" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.jinke.housekeeper.saas.report.ui.widget.MyGridView
+                android:id="@+id/activity_delay_progress_mygridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_delay_progress_ll_describe"
+                android:numColumns="3"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingLeft="@dimen/base_dimen_40"
+                android:paddingRight="@dimen/base_dimen_40"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_2"
+        android:background="@color/selfcheckingimgframe" />
+</LinearLayout>

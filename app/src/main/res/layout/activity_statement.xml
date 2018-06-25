@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jinke.housekeeper.saas.patrol.ui.activity.StatementActivity">
+
+    <LinearLayout
+        android:id="@+id/patrol_statement_head_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_220"
+        android:layout_marginTop="@dimen/base_dimen_24"
+        android:background="@color/layout_title_bar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/base_dimen_24">
+
+        <RelativeLayout
+            android:id="@+id/patrol_statement_corporation_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/base_dimen_1">
+
+            <TextView
+                android:id="@+id/patrol_statement_corporation_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_40"
+                android:text="@string/patrol_statement_corporation"
+                android:textColor="@color/text_color_23"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/patrol_statement_corporation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/patrol_statement_corporation_text"
+                android:layout_marginTop="@dimen/base_dimen_12"
+                android:drawablePadding="@dimen/base_dimen_16"
+                android:drawableRight="@drawable/patrol_remind_next"
+                android:hint="@string/patrol_statement_corporation_hint"
+                android:singleLine="true"
+                android:textColor="@color/equipment_title_text"
+                android:textColorHint="@color/text_color_23"
+                android:textSize="@dimen/base_dimen_30" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="@dimen/base_dimen_1"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/patrol_statement_head_1"
+            android:background="@color/home_progress" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/base_dimen_1">
+
+            <TextView
+                android:id="@+id/patrol_statement_statistics_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_40"
+                android:layout_marginTop="@dimen/base_dimen_40"
+                android:text="@string/patrol_statement_statistics"
+                android:textColor="@color/text_color_23"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/patrol_statement_statistics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/patrol_statement_statistics_text"
+                android:layout_marginLeft="@dimen/base_dimen_40"
+                android:layout_marginTop="@dimen/base_dimen_12"
+                android:text="--"
+                android:textColor="@color/equipment_title_text"
+                android:textSize="@dimen/base_dimen_30" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="@dimen/base_dimen_1"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/patrol_statement_head_1"
+            android:background="@color/home_progress" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/base_dimen_1">
+
+            <TextView
+                android:id="@+id/patrol_statement_plan_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_40"
+                android:layout_marginTop="@dimen/base_dimen_40"
+                android:text="@string/patrol_statement_plan"
+                android:textColor="@color/text_color_23"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/patrol_statement_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/patrol_statement_plan_text"
+                android:layout_marginLeft="@dimen/base_dimen_40"
+                android:layout_marginTop="@dimen/base_dimen_12"
+                android:text="--"
+                android:textColor="@color/equipment_title_text"
+                android:textSize="@dimen/base_dimen_30" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/patrol_statement_head_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:layout_below="@+id/patrol_statement_head_1"
+        android:background="@color/home_progress" />
+
+    <LinearLayout
+        android:id="@+id/patrol_statement_head_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_220"
+        android:layout_below="@+id/patrol_statement_head_line_1"
+        android:background="@color/layout_title_bar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/base_dimen_24">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/base_dimen_1">
+
+            <TextView
+                android:id="@+id/patrol_statement_omit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_40"
+                android:text="@string/patrol_statement_omit"
+                android:textColor="@color/text_color_23"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/patrol_statement_omit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/patrol_statement_omit_text"
+                android:layout_marginTop="@dimen/base_dimen_12"
+                android:text="--"
+                android:textColor="@color/text_color_24"
+                android:textSize="@dimen/base_dimen_30" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="@dimen/base_dimen_1"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/patrol_statement_head_1"
+            android:background="@color/home_progress" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/base_dimen_1">
+
+            <TextView
+                android:id="@+id/patrol_statement_point_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_40"
+                android:layout_marginTop="@dimen/base_dimen_40"
+                android:text="@string/patrol_statement_point"
+                android:textColor="@color/text_color_23"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/patrol_statement_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/patrol_statement_point_text"
+                android:layout_marginLeft="@dimen/base_dimen_40"
+                android:layout_marginTop="@dimen/base_dimen_12"
+                android:text="--"
+                android:textColor="@color/equipment_title_text"
+                android:textSize="@dimen/base_dimen_30" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="@dimen/base_dimen_1"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/patrol_statement_head_1"
+            android:background="@color/home_progress" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/base_dimen_1">
+
+            <TextView
+                android:id="@+id/patrol_statement_complete_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_40"
+                android:layout_marginTop="@dimen/base_dimen_40"
+                android:text="@string/patrol_statement_complete"
+                android:textColor="@color/text_color_23"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/patrol_statement_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/patrol_statement_complete_text"
+                android:layout_marginLeft="@dimen/base_dimen_40"
+                android:layout_marginTop="@dimen/base_dimen_12"
+                android:text="--"
+                android:textColor="@color/equipment_title_text"
+                android:textSize="@dimen/base_dimen_30" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_below="@+id/patrol_statement_head_2"
+        android:id="@+id/patrol_statement_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_108"
+        android:layout_marginTop="@dimen/base_dimen_24"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/patrol_statement_book"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/patrol_statement_book"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/patrol_statement_book"
+            android:textSize="@dimen/base_dimen_28"
+            android:textColor="@drawable/select_group_text" />
+
+
+        <RadioButton
+            android:id="@+id/patrol_statement_omit_book"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/patrol_statement_book"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="@dimen/base_dimen_28"
+            android:text="@string/patrol_statement_omit_book"
+            android:textColor="@drawable/select_group_text" />
+
+
+        <RadioButton
+            android:id="@+id/patrol_statement_analysis"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/patrol_statement_book"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/patrol_statement_analysis"
+            android:textSize="@dimen/base_dimen_28"
+            android:textColor="@drawable/select_group_text" />
+
+        <RadioButton
+            android:id="@+id/patrol_statement_calendar_book"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/patrol_statement_book"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/patrol_statement_calendar_book"
+            android:textSize="@dimen/base_dimen_28"
+            android:textColor="@drawable/select_group_text" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/patrol_statement_type_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:layout_below="@+id/patrol_statement_type"
+        android:background="@color/home_progress" />
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/patrol_statement_type_line"
+        android:id="@+id/patrol_statement_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

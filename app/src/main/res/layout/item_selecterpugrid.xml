@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tx_pointkey"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_70"
+        android:background="@drawable/shape_mywindow_blue_bg"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="4"
+        android:singleLine="true"
+        android:text="客服管理"
+        android:textColor="@color/innerblue" />
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/equipment_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_bg">
+
+        <TextView
+            android:id="@+id/equipment_popup_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_96"
+            android:gravity="center"
+            android:textColor="@color/equipment_text_2"
+            android:textSize="@dimen/base_dimen_28"
+            android:text="@string/equipment_popup_title" />
+
+        <TextView
+            android:id="@+id/equipment_popup_line_1"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/equipment_popup_title"
+            android:layout_height="@dimen/base_dimen_2"
+            android:background="@color/equipment_line_2" />
+
+        <TextView
+            android:id="@+id/equipment_popup_bluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_108"
+            android:textSize="@dimen/base_dimen_36"
+            android:text="@string/equipment_popup_bluetooth"
+            android:textColor="@color/equipment_text_3"
+            android:layout_below="@+id/equipment_popup_line_1"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/equipment_popup_line_2"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/equipment_popup_bluetooth"
+            android:layout_height="@dimen/base_dimen_2"
+            android:background="@color/equipment_line_2" />
+
+        <TextView
+            android:id="@+id/equipment_popup_nfc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_108"
+            android:layout_below="@+id/equipment_popup_line_2"
+            android:textSize="@dimen/base_dimen_36"
+            android:text="@string/equipment_popup_nfc"
+            android:textColor="@color/equipment_text_3"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/equipment_popup_line_3"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/equipment_popup_nfc"
+            android:layout_height="@dimen/base_dimen_2"
+            android:background="@color/equipment_line_2" />
+
+        <TextView
+            android:id="@+id/equipment_popup_set"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_108"
+            android:layout_below="@+id/equipment_popup_line_3"
+            android:textSize="@dimen/base_dimen_36"
+            android:text="@string/equipment_popup_set"
+            android:textColor="@color/equipment_text_3"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/equipment_popup_line_4"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/equipment_popup_set"
+            android:layout_height="@dimen/base_dimen_2"
+            android:background="@color/equipment_line_2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/base_dimen_28"
+        android:layout_below="@+id/equipment_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_bg">
+
+        <TextView
+            android:id="@+id/equipment_popup_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_108"
+            android:textSize="@dimen/base_dimen_36"
+            android:text="@string/equipment_popup_cancel"
+            android:textColor="@color/equipment_text_3"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

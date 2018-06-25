@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/equipment_bg_2"
+    tools:context="com.jinke.housekeeper.saas.equipment.ui.fragment.InspectProjectFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/inspect_project_hint"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_326"
+            android:background="@color/equipment_bg_2"
+            android:text="暂无信息"
+            android:gravity="center"/>
+
+        <WebView
+            android:id="@+id/inspect_project_web_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_36"
+            android:layout_marginTop="@dimen/base_dimen_10"
+            android:background="@color/white" />
+
+    </RelativeLayout>
+
+</FrameLayout>

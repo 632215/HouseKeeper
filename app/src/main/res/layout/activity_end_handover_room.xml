@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/equipment_bg"
+    tools:context="com.jinke.housekeeper.saas.handoverroom.ui.activity.EndHandoverRoomActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_28">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_12"
+            android:background="@color/equipment_title_bg"
+            android:orientation="vertical">
+
+            <com.jinke.housekeeper.saas.handoverroom.ui.widget.CustomListView
+                android:id="@+id/end_handover_room_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/base_dimen_24"
+                android:dividerHeight="@dimen/base_dimen_2"
+
+                android:divider="@color/equipment_line_2" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/end_handover_room_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingTop="@dimen/base_dimen_16"
+        android:paddingBottom="@dimen/base_dimen_16">
+
+        <TextView
+            android:id="@+id/finish_handover_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_28"
+            android:layout_marginRight="@dimen/base_dimen_28"
+            android:background="@color/equipment_bg_3"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_dimen_28"
+            android:paddingTop="@dimen/base_dimen_28"
+            android:text="@string/finish_handover_room"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_32" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

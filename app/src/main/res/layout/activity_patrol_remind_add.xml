@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jinke.housekeeper.patrol.ui.activity.PatrolRemindAddActivity">
+
+    <RelativeLayout
+        android:id="@+id/patrol_remind_add_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_450">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.jinke.housekeeper.saas.patrol.ui.widget.wheelview.WheelView
+                android:id="@+id/patrol_remind_add_ap"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.jinke.housekeeper.saas.patrol.ui.widget.wheelview.WheelView
+                android:id="@+id/patrol_remind_add_hour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.jinke.housekeeper.saas.patrol.ui.widget.wheelview.WheelView
+                android:id="@+id/patrol_remind_add_minute"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_230"
+        android:layout_below="@+id/patrol_remind_add_time"
+        android:background="@color/layout_title_bar_bg"
+        android:paddingLeft="@dimen/base_dimen_24"
+        android:paddingRight="@dimen/base_dimen_24">
+
+        <RelativeLayout
+            android:id="@+id/remind_add_body_1"
+            android:layout_width="match_parent"
+            android:textColor="@color/text_color_12"
+            android:layout_height="@dimen/base_dimen_114">
+
+            <TextView
+                android:id="@+id/remind_add_repetition_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/patrol_remind_add_repetition"
+                android:textColor="@color/text_color_12"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:id="@+id/remind_add_repetition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/remind_add_repetition_text"
+                android:drawablePadding="@dimen/base_dimen_12"
+                android:drawableRight="@drawable/open_right_ico"
+                android:gravity="right"
+                android:hint="@string/remind_add_repetition_hint"
+                android:singleLine="true"
+                android:textColor="@color/text_color_12"
+                android:textColorHint="@color/text_color_13"
+                android:textSize="@dimen/base_dimen_30" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_below="@+id/remind_add_body_1"
+            android:background="@color/layout_title_bar_line_4" />
+
+        <RelativeLayout
+            android:id="@+id/remind_add_body_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_114"
+            android:layout_below="@+id/remind_add_body_1"
+            android:layout_marginTop="@dimen/base_dimen_2">
+
+            <TextView
+                android:id="@+id/patrol_remind_add_remark_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/patrol_remind_add_remark"
+                android:textColor="@color/text_color_12"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:layout_width="@dimen/base_dimen_2"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/base_dimen_24"
+                android:layout_toEndOf="@+id/patrol_remind_add_remark_text"
+                android:background="@color/text_color_12" />
+
+            <EditText
+                android:id="@+id/patrol_remind_add_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/base_dimen_50"
+                android:layout_toEndOf="@+id/patrol_remind_add_remark_text"
+                android:background="@null"
+                android:drawablePadding="@dimen/base_dimen_8"
+                android:gravity="left"
+                android:hint="@string/patrol_remind_add_remark_hint"
+                android:singleLine="true"
+                android:textColor="@color/text_color_12"
+                android:textColorHint="@color/text_color_13"
+                android:textCursorDrawable="@drawable/color_cursor_white"
+                android:textSize="@dimen/base_dimen_30" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

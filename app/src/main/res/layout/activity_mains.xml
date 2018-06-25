@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_main_default_bg_color"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/activity_main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_main_line" />
+
+    <TextView
+        android:id="@+id/tv_main_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/activity_main_btn"
+        android:background="@color/activity_main_default_bg_color" />
+
+    <RadioGroup
+        android:id="@+id/activity_main_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/base_dimen_10"
+        android:paddingTop="@dimen/base_dimen_10">
+
+        <RadioButton
+            android:id="@+id/activity_main_radio_button_msg"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/select_activity_main_msg"
+            android:text="@string/activity_main_tab_msg"
+            android:textColor="@drawable/select_activity_main_btn_color" />
+
+        <RadioButton
+            android:id="@+id/activity_main_radio_button_knowledge"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/select_activity_main_knowledge"
+            android:text="@string/activity_main_knowledge_base"
+            android:textColor="@drawable/select_activity_main_btn_color" />
+
+        <RadioButton
+            android:id="@+id/activity_main_radio_button_workbench"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/select_activity_main_workbench"
+            android:text="@string/activity_main_workbench"
+            android:textColor="@drawable/select_activity_main_btn_color" />
+
+        <RadioButton
+            android:id="@+id/activity_main_radio_button_examination"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/select_activity_main_examination_statistics"
+            android:text="@string/activity_main_self_examination_statistics"
+            android:textColor="@drawable/select_activity_main_btn_color"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/activity_main_radio_button_personal"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/select_activity_main_personal_center"
+            android:text="@string/activity_main_personal_center"
+            android:textColor="@drawable/select_activity_main_btn_color" />
+    </RadioGroup>
+</RelativeLayout>

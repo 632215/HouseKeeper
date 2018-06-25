@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/equipment_title_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/equipment_polling_details_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_26"
+            android:layout_marginTop="@dimen/base_dimen_30"
+            android:src="@drawable/equipment_err_ico" />
+
+        <TextView
+            android:id="@+id/equipment_polling_details_name"
+            android:layout_width="@dimen/base_dimen_192"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_28"
+            android:layout_marginLeft="@dimen/base_dimen_12"
+            android:layout_marginTop="@dimen/base_dimen_28"
+            android:layout_toRightOf="@+id/equipment_polling_details_time"
+            android:lines="1"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <TextView
+            android:id="@+id/equipment_polling_details_location"
+            android:layout_width="@dimen/base_dimen_290"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_28"
+            android:layout_marginLeft="@dimen/base_dimen_12"
+            android:layout_marginTop="@dimen/base_dimen_28"
+            android:layout_toRightOf="@+id/equipment_polling_details_name"
+            android:lines="1"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <TextView
+            android:id="@+id/equipment_polling_details_state"
+            android:layout_width="@dimen/base_dimen_140"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/base_dimen_20"
+            android:layout_marginRight="@dimen/base_dimen_16"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:padding="@dimen/base_dimen_8"
+            android:text="@string/daily_patrol_start_task"
+            android:gravity="center"
+            android:textColor="@color/equipment_text_6"
+            android:background="@drawable/gray_border_bg"
+            android:textSize="@dimen/base_dimen_28" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,275 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jinke.housekeeper.saas.patrol.ui.fragment.PatrolStatementFragment">
+
+    <RelativeLayout
+        android:id="@+id/patrol_statement_time_chose_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_104"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/date_picker_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/date_picker_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_24"
+                android:text="2"
+                android:textColor="@color/text_color_25"
+                android:textSize="@dimen/base_dimen_32" />
+
+            <TextView
+                android:id="@+id/date_picker_month_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/date_picker_month"
+                android:text="@string/month"
+                android:textColor="@color/text_color_25"
+                android:textSize="@dimen/base_dimen_32" />
+
+            <TextView
+                android:id="@+id/date_picker_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/date_picker_month"
+                android:layout_marginLeft="@dimen/base_dimen_12"
+                android:layout_toRightOf="@+id/date_picker_month_hint"
+                android:drawableRight="@drawable/date_picker_down_ico"
+                android:text="2018"
+                android:textColor="@color/newslist_text_gray"
+                android:textSize="@dimen/base_dimen_28" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/date_picker_line"
+            android:layout_width="@dimen/base_dimen_24"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_24"
+            android:layout_toRightOf="@+id/date_picker_layout"
+            android:background="@color/text_color_26" />
+
+        <RelativeLayout
+            android:id="@+id/date_picker_layout_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/date_picker_line">
+
+            <TextView
+                android:id="@+id/date_picker_month_n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_18"
+                android:text="2"
+                android:textColor="@color/text_color_25"
+                android:textSize="@dimen/base_dimen_32" />
+
+            <TextView
+                android:id="@+id/date_picker_month_n_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/date_picker_month_n"
+                android:text="@string/month"
+                android:textColor="@color/text_color_25"
+                android:textSize="@dimen/base_dimen_32" />
+
+            <TextView
+                android:id="@+id/date_picker_year_n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/date_picker_month_n"
+                android:layout_marginLeft="@dimen/base_dimen_12"
+                android:layout_toRightOf="@+id/date_picker_month_n_hint"
+                android:drawableRight="@drawable/date_picker_down_ico"
+                android:text="2018"
+                android:textColor="@color/newslist_text_gray"
+                android:textSize="@dimen/base_dimen_28" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_24">
+
+            <TextView
+                android:id="@+id/date_picker_hint_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/date_picker_leak_ico"
+                android:drawablePadding="@dimen/base_dimen_22"
+                android:text="@string/date_picker_hint_1"
+                android:textColor="@color/newslist_text_gray"
+                android:textSize="@dimen/base_dimen_24" />
+
+            <TextView
+                android:id="@+id/date_picker_hint_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_picker_hint_1"
+                android:drawableLeft="@drawable/date_picker_normal_ico"
+                android:drawablePadding="@dimen/base_dimen_22"
+                android:text="@string/date_picker_hint_2"
+                android:textColor="@color/newslist_text_gray"
+                android:textSize="@dimen/base_dimen_24" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/patrol_statement_time_chose_layout"
+        android:background="@color/white"
+        android:descendantFocusability="blocksDescendants">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/date_picker_map_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_dimen_36">
+
+                <TextView
+                    android:id="@+id/date_picker_map_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_358"
+                    android:gravity="center"
+                    android:text="@string/date_picker_map_empty"
+                    android:textColor="@color/text_color_25"
+                    android:textSize="@dimen/base_dimen_32" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/date_picker_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_358"
+                    android:paddingLeft="@dimen/base_dimen_20"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/date_picker_map_list_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_picker_map_layout"
+                android:descendantFocusability="blocksDescendants">
+
+                <TextView
+                    android:id="@+id/date_picker_map_list_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/base_dimen_24"
+                    android:layout_marginLeft="@dimen/base_dimen_24"
+                    android:text="@string/date_picker_map_list_hint"
+                    android:textColor="@color/equipment_title_text"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <LinearLayout
+                    android:id="@+id/date_picker_map_list_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_88"
+                    android:layout_below="@+id/date_picker_map_list_hint"
+                    android:layout_marginLeft="@dimen/base_dimen_24"
+                    android:layout_marginRight="@dimen/base_dimen_22"
+                    android:background="@color/equipment_bg_3">
+
+                    <TextView
+                        android:id="@+id/date_picker_map_company_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="79"
+                        android:gravity="center"
+                        android:text="@string/date_picker_map_company"
+                        android:textColor="@color/equipment_title_bg"
+                        android:textSize="@dimen/base_dimen_24" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="64"
+                        android:gravity="center"
+                        android:text="@string/date_picker_map_leak"
+                        android:textColor="@color/equipment_title_bg"
+                        android:textSize="@dimen/base_dimen_24" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="64"
+                        android:gravity="center"
+                        android:text="@string/date_picker_map_reality"
+                        android:textColor="@color/equipment_title_bg"
+                        android:textSize="@dimen/base_dimen_24" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="64"
+                        android:gravity="center"
+                        android:text="@string/date_picker_map_plan"
+                        android:textColor="@color/equipment_title_bg"
+                        android:textSize="@dimen/base_dimen_24" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="64"
+                        android:gravity="center"
+                        android:text="@string/date_picker_map_percentage"
+                        android:textColor="@color/equipment_title_bg"
+                        android:textSize="@dimen/base_dimen_24" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date_picker_map_list_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_2"
+                    android:layout_below="@+id/date_picker_map_list_head"
+                    android:layout_marginLeft="@dimen/base_dimen_24"
+                    android:layout_marginRight="@dimen/base_dimen_22"
+                    android:background="@color/equipment_text_18" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_358"
+                    android:layout_below="@+id/date_picker_map_list_line"
+                    android:gravity="center"
+                    android:text="@string/date_picker_map_empty"
+                    android:textColor="@color/text_color_25"
+                    android:textSize="@dimen/base_dimen_32" />
+
+                <com.jinke.housekeeper.saas.report.ui.widget.CustomListView
+                    android:id="@+id/date_picker_map_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/date_picker_map_list_line"
+                    android:layout_marginLeft="@dimen/base_dimen_24"
+                    android:layout_marginRight="@dimen/base_dimen_22"
+                    android:divider="@null" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

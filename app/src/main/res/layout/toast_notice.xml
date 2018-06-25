@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corners_toast_bg">
+
+        <TextView
+            android:layout_marginTop="@dimen/base_dimen_24"
+            android:layout_marginBottom="@dimen/base_dimen_24"
+            android:id="@+id/toast_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="从现在起12小时后提醒"
+            android:textColor="@color/layout_title_bar_bg"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

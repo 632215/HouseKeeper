@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/equipment_bg"
+    tools:context="com.jinke.housekeeper.saas.handoverroom.ui.activity.EquipmentConfigurationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/base_dimen_28">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_12"
+            android:background="@color/equipment_title_bg"
+            android:orientation="vertical">
+
+            <com.jinke.housekeeper.saas.handoverroom.ui.widget.CustomListView
+                android:id="@+id/equipment_config_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/base_dimen_24"
+                android:dividerHeight="@dimen/base_dimen_2"
+                android:divider="@color/equipment_line_2" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

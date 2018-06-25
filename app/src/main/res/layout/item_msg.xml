@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_124">
+
+        <TextView
+            android:id="@+id/item_msg_text_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_16"
+            android:layout_marginRight="@dimen/base_dimen_42"
+            android:background="@drawable/fragment_msg_red"
+            android:gravity="center"
+            android:text="@string/fragment_msg_state_1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_32" />
+
+        <TextView
+            android:id="@+id/item_msg_text_read_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_msg_text_state"
+            android:layout_alignTop="@+id/item_msg_text_state"
+            android:layout_toRightOf="@+id/item_msg_text_state"
+            android:gravity="center_vertical"
+            android:text="@string/fragment_msg_state_unread"
+            android:textColor="@color/fragment_msg_grab_single"
+            android:textSize="@dimen/base_dimen_32" />
+
+        <TextView
+            android:id="@+id/item_msg_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_msg_text_state"
+            android:layout_alignTop="@+id/item_msg_text_state"
+            android:layout_toRightOf="@+id/item_msg_text_read_state"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxEms="13"
+            android:textColor="@color/black"
+            android:textSize="@dimen/base_dimen_32" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

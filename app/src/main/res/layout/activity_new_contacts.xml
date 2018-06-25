@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jinke.housekeeper.ui.widget.LoadingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_contacts_loadingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroup_bg"
+    android:scrollbars="none">
+
+    <www.jinke.com.library.pulltorefresh.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_contacts_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activity_contacts_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/activity_contacts_rl_frequent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_contacts_recycler_view"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/activity_contacts_tx_head"
+                    android:layout_width="@dimen/base_dimen_74"
+                    android:layout_height="@dimen/base_dimen_74"
+                    android:layout_marginBottom="@dimen/base_dimen_28"
+                    android:layout_marginLeft="@dimen/base_dimen_22"
+                    android:layout_marginTop="@dimen/base_dimen_26"
+                    android:background="@drawable/shape_item_contact_yellow"
+                    android:gravity="center"
+                    android:text="天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/base_dimen_32" />
+
+                <TextView
+                    android:id="@+id/activity_contacts_tx_head_office"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/activity_contacts_tx_head"
+                    android:layout_alignTop="@+id/activity_contacts_tx_head"
+                    android:layout_marginLeft="@dimen/base_dimen_16"
+                    android:layout_toRightOf="@id/activity_contacts_tx_head"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_new_contacts_frequent_contacts"
+                    android:textColor="@color/item_contact_text_black"
+                    android:textSize="@dimen/base_dimen_32" />
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activity_contacts_recycler_view_frequent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_contacts_rl_frequent" />
+        </RelativeLayout>
+    </www.jinke.com.library.pulltorefresh.PullToRefreshScrollView>
+</com.jinke.housekeeper.ui.widget.LoadingLayout>

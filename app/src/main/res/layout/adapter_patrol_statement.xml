@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--android:text="@string/patrol_manage_times"-->
+
+
+    <LinearLayout
+        android:id="@+id/patrol_manage_list_litme"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_66"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/base_dimen_2"
+            android:layout_height="match_parent"
+            android:background="@color/equipment_text_18"
+            android:orientation="horizontal" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="79"
+            android:background="@color/equipment_bg_4">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <TextView
+                    android:id="@+id/date_picker_map_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/patrol_manage_location_name"
+                    android:textColor="@color/equipment_text_7"
+                    android:textSize="@dimen/base_dimen_30" />
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/patrol_manage_location_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:layout_alignParentBottom="true"
+                android:background="@color/equipment_text_18"
+                android:orientation="horizontal"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="@dimen/base_dimen_2"
+            android:layout_height="match_parent"
+            android:background="@color/equipment_text_18"
+            android:orientation="horizontal" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="64">
+
+            <TextView
+                android:id="@+id/date_picker_map_leak"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:lines="1"
+                android:textColor="@color/equipment_text_7"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:layout_alignParentBottom="true"
+                android:background="@color/equipment_text_18"
+                android:orientation="horizontal" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="@dimen/base_dimen_2"
+            android:layout_height="match_parent"
+            android:background="@color/equipment_text_18"
+            android:orientation="horizontal" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="64">
+
+            <TextView
+                android:id="@+id/date_picker_map_reality"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_weight="112"
+                android:gravity="center"
+                android:lines="1"
+                android:textColor="@color/equipment_text_7"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:layout_alignParentBottom="true"
+                android:background="@color/equipment_text_18"
+                android:orientation="horizontal" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="@dimen/base_dimen_2"
+            android:layout_height="match_parent"
+            android:background="@color/equipment_text_18"
+            android:orientation="horizontal" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="64">
+
+            <TextView
+                android:id="@+id/date_picker_map_plan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_weight="112"
+                android:gravity="center"
+                android:lines="1"
+                android:textColor="@color/equipment_text_7"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:layout_alignParentBottom="true"
+                android:background="@color/equipment_text_18"
+                android:orientation="horizontal" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="@dimen/base_dimen_2"
+            android:layout_height="match_parent"
+            android:background="@color/equipment_text_18"
+            android:orientation="horizontal" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="64">
+
+            <TextView
+                android:id="@+id/date_picker_map_percentage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_weight="112"
+                android:gravity="center"
+                android:lines="1"
+                android:textColor="@color/equipment_text_7"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:layout_alignParentBottom="true"
+                android:background="@color/equipment_text_18"
+                android:orientation="horizontal" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="@dimen/base_dimen_2"
+            android:layout_height="match_parent"
+            android:background="@color/equipment_text_18"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

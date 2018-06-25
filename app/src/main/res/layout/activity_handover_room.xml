@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_patrol"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_title_bar_bg"
+    tools:context="com.jinke.housekeeper.saas.patrol.ui.activity.PatrolActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_24"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/equipment_activation_activity_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/base_dimen_220"
+            android:layout_margin="@dimen/base_dimen_12"
+            android:layout_weight="1"
+            android:background="@color/layout_title_bar_line_3"
+            android:padding="@dimen/base_dimen_1">
+
+            <TextView
+                android:id="@+id/equipment_activation_activity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/layout_title_bar_bg"
+                android:drawablePadding="@dimen/base_dimen_18"
+                android:drawableTop="@drawable/handover_room_activate_ico"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:text="@string/equipment_activation_activity"
+                android:textColor="@color/text_color_11"
+                android:textSize="@dimen/base_dimen_32" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/equipment_configuration_activity_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/base_dimen_220"
+            android:layout_margin="@dimen/base_dimen_12"
+            android:layout_weight="1"
+            android:background="@color/layout_title_bar_line_3"
+            android:padding="@dimen/base_dimen_1">
+
+            <TextView
+                android:id="@+id/equipment_configuration_activity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/layout_title_bar_bg"
+                android:drawablePadding="@dimen/base_dimen_18"
+                android:drawableTop="@drawable/handover_room_setting_ico"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:text="@string/equipment_configuration_activity"
+                android:textColor="@color/text_color_11"
+                android:textSize="@dimen/base_dimen_32" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bean_handover_room_activity_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/base_dimen_220"
+            android:layout_margin="@dimen/base_dimen_12"
+            android:layout_weight="1"
+            android:background="@color/layout_title_bar_line_3"
+            android:padding="@dimen/base_dimen_1">
+
+            <TextView
+                android:id="@+id/bean_handover_room_activity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/layout_title_bar_bg"
+                android:drawablePadding="@dimen/base_dimen_18"
+                android:drawableTop="@drawable/began_handover_room_ico"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:text="@string/bean_handover_room_activity"
+                android:textColor="@color/text_color_11"
+                android:textSize="@dimen/base_dimen_32" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bean_handover_room_activity_hint"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/base_dimen_220"
+            android:layout_margin="@dimen/base_dimen_12"
+            android:layout_weight="1"
+            android:padding="@dimen/base_dimen_1"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/equipment_activation_activity_hint"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/base_dimen_220"
+            android:layout_margin="@dimen/base_dimen_12"
+            android:layout_weight="1"
+            android:padding="@dimen/base_dimen_1"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/equipment_bg"
+    tools:context="com.jinke.housekeeper.saas.handoverroom.ui.activity.EquipmentConfigurationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_28"
+        android:background="@color/equipment_title_bg"
+        android:paddingLeft="@dimen/base_dimen_24"
+        android:paddingRight="@dimen/base_dimen_28">
+
+        <RelativeLayout
+            android:id="@+id/configuration_project_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_32"
+            android:paddingBottom="@dimen/base_dimen_32">
+
+            <TextView
+                android:id="@+id/configuration_project_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/configuration_project"
+                android:textColor="@color/equipment_text_8"
+                android:textSize="@dimen/base_dimen_32" />
+
+            <TextView
+                android:id="@+id/configuration_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/base_dimen_66"
+                android:drawablePadding="@dimen/base_dimen_20"
+                android:drawableRight="@drawable/configuration_project_next_ico"
+                android:hint="@string/configuration_project_hint"
+                android:textColor="@color/equipment_text_8"
+                android:textColorHint="@color/equipment_text_20"
+                android:textSize="@dimen/base_dimen_32" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/configuration_project_layout_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_below="@+id/configuration_project_layout"
+            android:background="@color/equipment_line_4" />
+
+        <RelativeLayout
+            android:id="@+id/configuration_equipment_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/configuration_project_layout_line"
+            android:layout_marginTop="@dimen/base_dimen_32"
+            android:paddingBottom="@dimen/base_dimen_32">
+
+            <TextView
+                android:id="@+id/configuration_equipment_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/configuration_equipment"
+                android:textColor="@color/equipment_text_8"
+                android:textSize="@dimen/base_dimen_32" />
+
+            <TextView
+                android:id="@+id/configuration_equipment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/base_dimen_66"
+                android:drawablePadding="@dimen/base_dimen_20"
+                android:drawableRight="@drawable/configuration_project_next_ico"
+                android:hint="@string/configuration_equipment_hint"
+                android:textColor="@color/equipment_text_8"
+                android:textColorHint="@color/equipment_text_20"
+                android:textSize="@dimen/base_dimen_32" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/configuration_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/equipment_title_bg">
+
+        <TextView
+            android:id="@+id/configuration_project_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_16"
+            android:layout_marginLeft="@dimen/base_dimen_34"
+            android:layout_marginRight="@dimen/base_dimen_34"
+            android:layout_marginTop="@dimen/base_dimen_16"
+            android:background="@color/equipment_bg_3"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_dimen_26"
+            android:paddingTop="@dimen/base_dimen_26"
+            android:text="@string/configuration_project_sure"
+            android:textColor="@color/equipment_title_bg"
+            android:textSize="@dimen/base_dimen_32" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

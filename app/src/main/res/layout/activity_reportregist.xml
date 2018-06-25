@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRegisterBackground">
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_customtitleview"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape_parting_bottom_1dp">
+
+        <TextView
+            android:id="@+id/activity_report_register_text_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:drawableLeft="@drawable/icon_work_bench_back"
+            android:padding="@dimen/base_dimen_12"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/frame_blue"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="报事报修"
+            android:textColor="@color/black"
+            android:textSize="@dimen/base_dimen_36" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/activity_report_register_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_input_module"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titleLayout"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_self_checking_project"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_99"
+                android:layout_marginLeft="@dimen/base_dimen_40"
+                android:background="@drawable/shape_parting_bottom_1dp">
+
+                <TextView
+                    android:id="@+id/tv_self_checking_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/project_belong"
+                    android:textColor="@color/register_text_black"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:id="@+id/self_checking_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/base_dimen_10"
+                    android:drawableRight="@drawable/choose"
+                    android:paddingBottom="@dimen/base_dimen_20"
+                    android:paddingRight="@dimen/base_dimen_40"
+                    android:paddingTop="@dimen/base_dimen_20"
+                    android:text="@string/please_select"
+                    android:textColor="@color/register_edit_gray"
+                    android:textSize="@dimen/base_dimen_28" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_self_checking_room"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_99"
+                android:layout_below="@+id/rl_self_checking_project"
+                android:layout_marginLeft="@dimen/base_dimen_40"
+                android:background="@drawable/shape_parting_bottom_1dp">
+
+                <TextView
+                    android:id="@+id/tv_room_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tvg_room_project_value"
+                    android:textColor="@color/register_text_black"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:id="@+id/tvg_room_project_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/base_dimen_10"
+                    android:drawableRight="@drawable/choose"
+                    android:paddingBottom="@dimen/base_dimen_20"
+                    android:paddingRight="@dimen/base_dimen_40"
+                    android:paddingTop="@dimen/base_dimen_20"
+                    android:text="@string/please_select"
+                    android:textColor="@color/register_edit_gray"
+                    android:textSize="@dimen/base_dimen_28" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_self_checking_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_99"
+                android:layout_below="@+id/rl_self_checking_room"
+                android:layout_marginLeft="@dimen/base_dimen_40"
+                android:background="@drawable/shape_parting_bottom_1dp">
+
+                <TextView
+                    android:id="@+id/tv_self_checking_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/type_belong"
+                    android:textColor="@color/register_text_black"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:id="@+id/self_checking_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/base_dimen_10"
+                    android:drawableRight="@drawable/choose"
+                    android:paddingBottom="@dimen/base_dimen_20"
+                    android:paddingRight="@dimen/base_dimen_40"
+                    android:paddingTop="@dimen/base_dimen_20"
+                    android:text="@string/please_select"
+                    android:textColor="@color/register_edit_gray"
+                    android:textSize="@dimen/base_dimen_28" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_self_checking_point_key"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_99"
+                android:layout_below="@+id/rl_self_checking_type"
+                android:layout_marginLeft="@dimen/base_dimen_40"
+                android:background="@drawable/shape_parting_bottom_1dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/report_location"
+                    android:textColor="@color/register_text_black"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:id="@+id/pointKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/base_dimen_10"
+                    android:drawableRight="@drawable/choose"
+                    android:paddingBottom="@dimen/base_dimen_20"
+                    android:paddingRight="@dimen/base_dimen_40"
+                    android:paddingTop="@dimen/base_dimen_20"
+                    android:text="@string/please_select"
+                    android:textColor="@color/register_edit_gray"
+                    android:textSize="@dimen/base_dimen_28" />
+            </RelativeLayout>
+
+
+            <com.jinke.housekeeper.saas.report.ui.widget.MyGridView
+                android:id="@+id/myGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_self_checking_point_key"
+                android:background="@drawable/shape_parting_bottom_1dp"
+                android:numColumns="3"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingLeft="@dimen/base_dimen_40"
+                android:paddingRight="@dimen/base_dimen_40"
+                android:paddingTop="@dimen/base_dimen_20" />
+
+            <LinearLayout
+                android:id="@+id/layout_text_voice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myGridView"
+                android:layout_marginBottom="@dimen/base_dimen_80"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/voiceLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/base_dimen_20"
+                    android:paddingRight="@dimen/base_dimen_20"
+                    android:paddingTop="@dimen/base_dimen_20"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/voiceClear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_dimen_200"
+                        android:padding="@dimen/base_dimen_20"
+                        android:src="@drawable/clear" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_video_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/voiceClear"
+                        android:background="@drawable/icon_report_register_describe">
+
+                        <View
+                            android:id="@+id/voiceAnim"
+                            android:layout_width="@dimen/base_dimen_40"
+                            android:layout_height="@dimen/base_dimen_40"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/base_dimen_10"
+                            android:background="@drawable/v_anim3" />
+
+                        <TextView
+                            android:id="@+id/voiceTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/base_dimen_20"
+                            android:text="56″"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/base_dimen_28" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/img_video_time_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/rl_video_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/icon_report_register_describe_left" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/textLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/base_dimen_20"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/textClear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_dimen_200"
+                        android:padding="@dimen/base_dimen_20"
+                        android:src="@drawable/clear" />
+
+                    <TextView
+                        android:id="@+id/textDescribe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/textClear"
+                        android:background="@drawable/icon_report_register_describe"
+                        android:maxHeight="@dimen/base_dimen_200"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="13dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <ImageView
+                        android:id="@+id/img_register_describe_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textDescribe"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toLeftOf="@+id/textDescribe"
+                        android:src="@drawable/icon_report_register_describe_left" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_input_module"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_parting_top_1dp">
+
+        <ImageView
+            android:id="@+id/imgVoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/base_dimen_10"
+            android:paddingLeft="@dimen/base_dimen_20"
+            android:paddingRight="@dimen/base_dimen_20"
+            android:paddingTop="@dimen/base_dimen_10"
+            android:src="@drawable/voice" />
+
+        <com.jinke.housekeeper.saas.report.ui.widget.AudioRecorderButton
+            android:id="@+id/audioRecorderButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgVoice"
+            android:layout_alignTop="@+id/imgVoice"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_20"
+            android:layout_toLeftOf="@+id/report_text_title_submit"
+            android:layout_toRightOf="@+id/imgVoice"
+            android:background="@drawable/voice_btn_press"
+            android:gravity="center"
+            android:text="@string/press_start"
+            android:textSize="@dimen/base_dimen_28"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_20"
+            android:layout_toLeftOf="@+id/tx_send"
+            android:layout_toRightOf="@+id/imgVoice"
+            android:background="@drawable/shape_self_checking_edit_background"
+            android:gravity="start|center_vertical"
+            android:hint="@string/description_problem"
+            android:imeOptions="actionSend"
+            android:padding="@dimen/base_dimen_16"
+            android:textColor="@color/register_text_black"
+            android:textColorHint="@color/register_edit_gray"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <TextView
+            android:id="@+id/tx_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@+id/report_text_title_submit"
+            android:gravity="center"
+            android:paddingLeft="@dimen/base_dimen_16"
+            android:paddingRight="@dimen/base_dimen_35"
+            android:text="发送"
+            android:textColor="@color/work_bench_tx_theme"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <TextView
+            android:id="@+id/report_text_title_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/work_bench_tx_theme"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_dimen_10"
+            android:paddingLeft="@dimen/base_dimen_30"
+            android:paddingRight="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_10"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_28" />
+    </RelativeLayout>
+
+</RelativeLayout>

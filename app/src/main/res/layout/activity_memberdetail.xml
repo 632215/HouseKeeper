@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_backgroup"
+    android:orientation="vertical">
+
+    <www.jinke.com.library.widget.NavigationView
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:background="@color/dialog" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/base_dimen_40">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/name"
+                android:textColor="@color/register_edit_gray"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:maxLength="10"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingRight="@dimen/base_dimen_40"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:textColor="@color/register_text_black"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:layout_alignBottom="@+id/name"
+                android:background="@color/dialog"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/base_dimen_40">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/phone"
+                android:textColor="@color/register_edit_gray"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:maxLength="11"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingRight="@dimen/base_dimen_40"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:textColor="@color/register_text_black"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:layout_alignBottom="@+id/phone"
+                android:background="@color/dialog"></View>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/base_dimen_40">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="职位"
+                android:textColor="@color/register_edit_gray"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:maxLength="10"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingRight="@dimen/base_dimen_40"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:textColor="@color/register_text_black"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:layout_alignBottom="@+id/position"
+                android:background="@color/dialog"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_register_project"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/base_dimen_40">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:text="所属项目"
+                android:textColor="@color/register_edit_gray"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/tv_rigster_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/base_dimen_10"
+                android:drawableRight="@drawable/choose"
+                android:maxLength="10"
+                android:paddingLeft="@dimen/base_dimen_200"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingRight="@dimen/base_dimen_40"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:text="请选择所属项目"
+                android:textColor="@color/register_text_black"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:layout_alignBottom="@+id/tv_rigster_project"
+                android:background="@color/dialog"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_register_department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/base_dimen_40">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:text="@string/project_department"
+                android:textColor="@color/register_edit_gray"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/tv_rigster_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/base_dimen_10"
+                android:drawableRight="@drawable/choose"
+                android:maxLength="10"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingRight="@dimen/base_dimen_40"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:paddingLeft="@dimen/base_dimen_200"
+                android:text="@string/project_belong"
+                android:textColor="@color/register_text_black"
+                android:textSize="@dimen/base_dimen_28" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:background="@color/dialog"></View>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/newMenberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/base_dimen_40"
+        android:paddingRight="@dimen/base_dimen_40"
+        android:paddingTop="@dimen/base_dimen_200"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/agree"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/base_dimen_10"
+            android:layout_weight="1"
+            android:background="@drawable/shape_login_button_background"
+            android:padding="@dimen/base_dimen_10"
+            android:text="同意"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <Button
+            android:id="@+id/newMenberDelete"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_10"
+            android:layout_weight="1"
+            android:background="@drawable/shape_blue_background"
+            android:padding="@dimen/base_dimen_10"
+            android:text="删除人员"
+            android:textSize="@dimen/base_dimen_28"
+            android:textColor="@color/frame_blue" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/oldMenberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/base_dimen_200">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:background="@color/dialog" />
+
+        <Button
+            android:id="@+id/oldMenberDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="删除人员"
+            android:textSize="@dimen/base_dimen_28"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:background="@color/dialog" />
+
+    </LinearLayout>
+
+</LinearLayout>

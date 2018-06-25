@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/equipment_bg_1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="200"
+            android:background="@color/equipment_bg_4"
+            android:paddingLeft="@dimen/base_dimen_18">
+
+            <LinearLayout
+                android:id="@+id/layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_56"
+                android:layout_marginTop="@dimen/base_dimen_32"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_meter_info_engine_stress_a"
+                    android:textColor="@color/equipment_text_15"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/read_meter_info_engine_stress_a"
+                        android:layout_width="@dimen/base_dimen_186"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/base_dimen_14"
+                        android:background="@color/equipment_title_bg"
+                        android:textColor="@color/equipment_text_8"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_56"
+                android:layout_below="@+id/layout_1"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_meter_info_engine_stress_b"
+                    android:textColor="@color/equipment_text_15"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/read_meter_info_engine_stress_b"
+                        android:layout_width="@dimen/base_dimen_186"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/base_dimen_14"
+                        android:background="@color/equipment_title_bg"
+                        android:textColor="@color/equipment_text_8"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_56"
+                android:layout_below="@+id/layout_2"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_meter_info_engine_stress_c"
+                    android:textColor="@color/equipment_text_15"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/read_meter_info_engine_stress_c"
+                        android:layout_width="@dimen/base_dimen_186"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/base_dimen_14"
+                        android:background="@color/equipment_title_bg"
+                        android:textColor="@color/equipment_text_8"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_56"
+                android:layout_below="@+id/layout_3"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_meter_info_engine_stress_ac"
+                    android:textColor="@color/equipment_text_15"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/read_meter_info_engine_stress_ac"
+                        android:layout_width="@dimen/base_dimen_186"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/base_dimen_14"
+                        android:background="@color/equipment_title_bg"
+                        android:textColor="@color/equipment_text_8"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_56"
+                android:layout_below="@+id/layout_4"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_meter_info_engine_stress_bc"
+                    android:textColor="@color/equipment_text_15"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/read_meter_info_engine_stress_bc"
+                        android:layout_width="@dimen/base_dimen_186"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/base_dimen_14"
+                        android:background="@color/equipment_title_bg"
+                        android:textColor="@color/equipment_text_8"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_56"
+                android:layout_below="@+id/layout_5"
+                android:layout_marginBottom="@dimen/base_dimen_36"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_meter_info_engine_stress_ab"
+                    android:textColor="@color/equipment_text_15"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/read_meter_info_engine_stress_ab"
+                        android:layout_width="@dimen/base_dimen_186"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/base_dimen_14"
+                        android:background="@color/equipment_title_bg"
+                        android:textColor="@color/equipment_text_8"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="154"
+            android:paddingRight="@dimen/base_dimen_20">
+
+            <LinearLayout
+                android:id="@+id/yesterday_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_56"
+                android:layout_marginTop="@dimen/base_dimen_32"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/base_dimen_8"
+                    android:gravity="center_vertical"
+                    android:text="@string/read_meter_info_mete_yesterday"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:id="@+id/read_meter_info_engine_stress_a_yesterday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/base_dimen_14"
+                    android:gravity="center_vertical"
+                    android:text="5648立方"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_28" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/yesterday_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_56"
+                android:layout_below="@+id/yesterday_layout_1"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/base_dimen_8"
+                    android:gravity="center_vertical"
+                    android:text="@string/read_meter_info_mete_yesterday"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:id="@+id/read_meter_info_engine_stress_b_yesterday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/base_dimen_14"
+                    android:gravity="center_vertical"
+                    android:text="5648立方"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_28" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/yesterday_layout_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_56"
+                android:layout_below="@+id/yesterday_layout_2"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/base_dimen_8"
+                    android:gravity="center_vertical"
+                    android:text="@string/read_meter_info_mete_yesterday"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:id="@+id/read_meter_info_engine_stress_c_yesterday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/base_dimen_14"
+                    android:gravity="center_vertical"
+                    android:text="5648立方"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_28" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/yesterday_layout_4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_56"
+                android:layout_below="@+id/yesterday_layout_3"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/base_dimen_8"
+                    android:gravity="center_vertical"
+                    android:text="@string/read_meter_info_mete_yesterday"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:id="@+id/read_meter_info_engine_stress_ac_yesterday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/base_dimen_14"
+                    android:gravity="center_vertical"
+                    android:text="5648立方"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_28" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/yesterday_layout_5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_56"
+                android:layout_below="@+id/yesterday_layout_4"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/base_dimen_8"
+                    android:gravity="center_vertical"
+                    android:text="@string/read_meter_info_mete_yesterday"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:id="@+id/read_meter_info_engine_stress_bc_yesterday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/base_dimen_14"
+                    android:gravity="center_vertical"
+                    android:text="5648立方"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_28" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/yesterday_layout_6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_56"
+                android:layout_below="@+id/yesterday_layout_5"
+                android:layout_marginBottom="@dimen/base_dimen_36"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/base_dimen_8"
+                    android:gravity="center_vertical"
+                    android:text="@string/read_meter_info_mete_yesterday"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:id="@+id/read_meter_info_engine_stress_ab_yesterday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/base_dimen_14"
+                    android:gravity="center_vertical"
+                    android:text="5648立方"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_28" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

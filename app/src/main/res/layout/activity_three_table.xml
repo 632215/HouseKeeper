@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/equipment_bg"
+    android:orientation="vertical"
+    tools:context="com.jinke.housekeeper.saas.equipment.ui.activity.StandBookActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/base_dimen_30"
+        android:paddingTop="@dimen/base_dimen_38">
+
+        <TextView
+            android:id="@+id/three_table_object_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_24"
+            android:text="@string/three_table_object"
+            android:textColor="@color/equipment_text_9"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <TextView
+            android:id="@+id/three_table_object_line"
+            android:layout_width="@dimen/base_dimen_2"
+            android:layout_height="@dimen/base_dimen_24"
+            android:layout_marginBottom="@dimen/base_dimen_12"
+            android:layout_marginLeft="@dimen/base_dimen_12"
+            android:layout_marginRight="@dimen/base_dimen_12"
+            android:layout_marginTop="@dimen/base_dimen_8"
+            android:layout_toRightOf="@+id/three_table_object_text"
+            android:background="@color/equipment_line_1" />
+
+        <TextView
+            android:id="@+id/three_table_object"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/three_table_object_line"
+            android:drawablePadding="@dimen/base_dimen_12"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="金科智慧城"
+            android:textColor="@color/equipment_text_6" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/stand_book_name_body"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_12"
+            android:background="@color/equipment_title_bg"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/base_dimen_24"
+            android:paddingRight="@dimen/base_dimen_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_dimen_22"
+                android:layout_marginTop="@dimen/base_dimen_42"
+                android:text="@string/three_table_enter"
+                android:textColor="@color/equipment_text_14"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <com.jinke.housekeeper.saas.equipment.ui.widget.CustomListView
+                android:id="@+id/three_table_enter_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/base_dimen_26"
+                android:divider="@null" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:background="@color/equipment_line_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_dimen_22"
+                android:layout_marginTop="@dimen/base_dimen_28"
+                android:text="@string/three_table_details"
+                android:textColor="@color/equipment_text_14"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <com.jinke.housekeeper.saas.equipment.ui.widget.CustomListView
+                android:id="@+id/three_table_details_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/base_dimen_100"
+                android:background="@color/equipment_bg_1"
+                android:divider="@null"
+                android:paddingBottom="@dimen/base_dimen_18"
+                android:paddingTop="@dimen/base_dimen_20" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

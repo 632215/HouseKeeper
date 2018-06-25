@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_108"
+        android:background="@color/equipment_title_bg">
+
+        <TextView
+            android:id="@+id/adapter_link_set_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/activity_link_set"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <TextView
+            android:id="@+id/adapter_link_set_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/base_dimen_40"
+            android:layout_centerVertical="true"
+            android:background="@drawable/equipment_select_ico" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

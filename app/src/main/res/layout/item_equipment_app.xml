@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_equipment_app_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/base_dimen_26"
+    android:paddingTop="@dimen/base_dimen_38">
+
+    <ImageView
+        android:id="@+id/item_equipment_app_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/equipment_daily_patrol_ico" />
+
+    <TextView
+        android:id="@+id/equipment_app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_equipment_app_image"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:maxEms="6"
+        android:paddingTop="@dimen/base_dimen_38"
+        android:text="@string/equipment_daily_patrol"
+        android:textColor="@color/equipment_text_1" />
+</RelativeLayout>

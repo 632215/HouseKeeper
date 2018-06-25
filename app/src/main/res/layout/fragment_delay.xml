@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rv_endtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape_parting_bottom_1dp"
+        android:padding="@dimen/base_dimen_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="延迟截止时间"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txt_endTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/base_dimen_10"
+            android:drawableRight="@drawable/choose"
+            android:gravity="center"
+            android:text="请选择"
+            android:textColor="@color/base_text_color_light" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/base_dimen_300"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rv_voice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/base_dimen_20"
+            android:paddingRight="@dimen/base_dimen_20"
+            android:paddingTop="@dimen/base_dimen_20"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_voice_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingLeft="@dimen/base_dimen_200"
+                android:paddingRight="@dimen/base_dimen_20"
+                android:paddingTop="@dimen/base_dimen_20"
+                android:src="@drawable/clear" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_voice_clear"
+                android:background="@drawable/shape_login_button_background">
+
+                <View
+                    android:id="@+id/voiceAnim"
+                    android:layout_width="@dimen/base_dimen_40"
+                    android:layout_height="@dimen/base_dimen_40"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_10"
+                    android:background="@drawable/v_anim3" />
+
+                <TextView
+                    android:id="@+id/tx_voice_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/base_dimen_20"
+                    android:text="56″"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/base_dimen_28" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/textLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base_dimen_20"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/tx_text_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingLeft="@dimen/base_dimen_200"
+                android:paddingRight="@dimen/base_dimen_20"
+                android:paddingTop="@dimen/base_dimen_20"
+                android:src="@drawable/clear" />
+
+            <TextView
+                android:id="@+id/textDescribe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tx_text_clear"
+                android:background="@drawable/shape_login_button_background"
+                android:maxHeight="@dimen/base_dimen_200"
+                android:padding="@dimen/base_dimen_20"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/base_dimen_28" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_parting_top_1dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_input_module"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_parting_top_1dp"
+            android:paddingBottom="@dimen/base_dimen_20"
+            android:paddingTop="@dimen/base_dimen_20">
+
+            <ImageView
+                android:id="@+id/img_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/base_dimen_10"
+                android:paddingLeft="@dimen/base_dimen_20"
+                android:paddingRight="@dimen/base_dimen_20"
+                android:paddingTop="@dimen/base_dimen_10"
+                android:src="@drawable/voice" />
+
+            <com.jinke.housekeeper.saas.report.ui.widget.AudioRecorderButton
+                android:id="@+id/btn_audio_recorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_voice"
+                android:layout_alignTop="@+id/img_voice"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:layout_toRightOf="@+id/img_voice"
+                android:background="@drawable/voice_btn_press"
+                android:gravity="center"
+                android:text="@string/press_start"
+                android:textSize="@dimen/base_dimen_28"
+                android:visibility="gone" />
+
+
+            <EditText
+                android:id="@+id/et_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_voice"
+                android:layout_alignTop="@+id/img_voice"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:layout_toLeftOf="@+id/tx_send"
+                android:layout_toRightOf="@+id/img_voice"
+                android:background="@drawable/shape_self_checking_edit_background"
+                android:gravity="start|center_vertical"
+                android:hint="@string/description_problem"
+                android:imeOptions="actionSend"
+                android:padding="@dimen/base_dimen_16"
+                android:textColor="@color/register_text_black"
+                android:textColorHint="@color/register_edit_gray"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/tx_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_voice"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/img_voice"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:background="@drawable/shape_activity_report_register_text_bg"
+                android:gravity="center"
+                android:maxHeight="@dimen/base_dimen_70"
+                android:padding="@dimen/base_dimen_16"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="@dimen/base_dimen_28" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_116"
+        android:background="@color/layout_title_bar_bg"
+        android:paddingLeft="@dimen/base_dimen_24"
+        android:paddingRight="@dimen/base_dimen_24">
+
+        <TextView
+            android:id="@+id/week_day"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="周日"
+            android:textColor="@color/text_color_12"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <TextView
+            android:id="@+id/week_day_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_24"
+            android:background="@drawable/patrol_remind_choice_ico"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

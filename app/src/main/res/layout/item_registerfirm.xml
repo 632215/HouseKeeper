@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/base_dimen_30"
+        android:paddingBottom="@dimen/base_dimen_30"
+        android:textSize="@dimen/base_dimen_28"
+        android:text="@string/firm"
+        android:textColor="@color/register_text_deepblack"
+        android:id="@+id/tv_firm_reigsterfirm"/>
+</LinearLayout>

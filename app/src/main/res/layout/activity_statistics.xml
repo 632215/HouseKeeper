@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/equipment_bg"
+    android:orientation="vertical"
+    tools:context="com.jinke.housekeeper.saas.equipment.ui.activity.StandBookActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_24"
+            android:background="@color/equipment_title_bg"
+            android:paddingBottom="@dimen/base_dimen_60"
+            android:paddingLeft="@dimen/base_dimen_24"
+            android:paddingRight="@dimen/base_dimen_24">
+
+            <RelativeLayout
+                android:id="@+id/stand_book_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/base_dimen_36">
+
+                <TextView
+                    android:id="@+id/stand_book_object_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/three_table_object"
+                    android:textColor="@color/equipment_text_9"
+                    android:textSize="@dimen/base_dimen_30" />
+
+
+                <TextView
+                    android:id="@+id/stand_book_object"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stand_book_object_text"
+                    android:layout_marginTop="@dimen/base_dimen_6"
+                    android:drawablePadding="@dimen/base_dimen_12"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/equipment_text_6"
+                    android:textSize="@dimen/base_dimen_34"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/stand_book_object_bold_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_24"
+                android:layout_below="@+id/stand_book_head"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:background="@color/equipment_bg_3" />
+
+            <include
+                layout="@layout/stand_book_object_day"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/stand_book_object_bold_line" />
+
+            <include
+                layout="@layout/stand_book_object_month"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/stand_book_object_bold_line" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

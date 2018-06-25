@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_backgroup"
+    android:orientation="vertical">
+
+    <www.jinke.com.library.widget.NavigationView
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/base_dimen_20">
+
+        <include layout="@layout/input_search" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:background="@color/home_line" />
+
+        <com.jinke.housekeeper.ui.widget.LoadingLayout
+            android:id="@+id/loadLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:isFirstVisible="true">
+
+            <www.jinke.com.library.pulltorefresh.PullToRefreshScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/base_dimen_20"
+                    android:orientation="vertical">
+
+                    <com.jinke.housekeeper.ui.widget.CustomGridView
+                        android:id="@+id/rv_liball"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:horizontalSpacing="@dimen/base_dimen_10"
+                        android:numColumns="2"
+                        android:verticalSpacing="@dimen/base_dimen_10" />
+                </LinearLayout>
+            </www.jinke.com.library.pulltorefresh.PullToRefreshScrollView>
+        </com.jinke.housekeeper.ui.widget.LoadingLayout>
+    </LinearLayout>
+
+</LinearLayout>

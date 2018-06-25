@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <www.jinke.com.library.widget.ProgressWheel
+        android:id="@+id/progressBarTwo"
+        android:layout_width="@dimen/base_dimen_100"
+        android:layout_height="@dimen/base_dimen_100"
+        ProgressWheel:pwBarColor="#339BB9"
+        ProgressWheel:pwBarLength="@dimen/base_dimen_120"
+        ProgressWheel:pwBarWidth="@dimen/base_dimen_8"
+        ProgressWheel:pwRimColor="@color/bg_default"
+        ProgressWheel:pwRimWidth="@dimen/base_dimen_8"
+        ProgressWheel:pwSpinSpeed="@dimen/base_dimen_6"
+        ProgressWheel:pwTextColor="@color/white"
+        ProgressWheel:pwTextSize="@dimen/base_dimen_36" />
+
+</LinearLayout>

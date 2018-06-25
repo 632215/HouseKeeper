@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/base_dimen_22">
+
+    <TextView
+        android:id="@+id/item_frequent_contact_tx_head"
+        android:layout_width="@dimen/base_dimen_74"
+        android:layout_height="@dimen/base_dimen_74"
+        android:layout_marginBottom="@dimen/base_dimen_28"
+        android:layout_marginTop="@dimen/base_dimen_26"
+        android:background="@drawable/shape_item_contact_yellow"
+        android:gravity="center"
+        android:text="天"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base_dimen_28" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_128"
+        android:layout_marginLeft="@dimen/base_dimen_16"
+        android:layout_toRightOf="@+id/item_frequent_contact_tx_head"
+        android:background="@drawable/shape_parting_top_1dp"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/base_dimen_10">
+
+        <TextView
+            android:id="@+id/item_frequent_contact_tx_name"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.5"
+            android:text="222222"
+            android:textColor="@color/item_contact_text_gray"
+            android:textSize="@dimen/base_dimen_32" />
+
+        <TextView
+            android:id="@+id/item_frequent_contact_tx_post"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.5"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="222222"
+            android:textColor="@color/item_contact_text_gray"
+            android:textSize="@dimen/base_dimen_32" />
+
+        <TextView
+            android:id="@+id/item_frequent_contact_tx_phone"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:text="222222"
+            android:textColor="@color/item_contact_text_blue"
+            android:textSize="@dimen/base_dimen_32" />
+
+        <ImageView
+            android:id="@+id/item_frequent_contact_img_phone"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:src="@drawable/item_frequent_contact_img_phone"
+            android:textSize="@dimen/base_dimen_32" />
+    </LinearLayout>
+</RelativeLayout>
